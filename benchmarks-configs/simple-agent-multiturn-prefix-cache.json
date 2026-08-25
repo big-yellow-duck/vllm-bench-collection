@@ -19,7 +19,11 @@
         4,
         8
       ],
-      "rampup_duration": 0
+      "rampup_duration": 0,
+      "warmup": {
+        "mode": "requests",
+        "value": 1
+      }
     },
     "constraints": [
       {
