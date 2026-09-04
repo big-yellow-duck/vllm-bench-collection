@@ -5,8 +5,8 @@ lengths:
 
 ```bash
 .venv/bin/python plotting/plot_tps_vs_token_length.py \
-  results/gfx1151/agent-multiturn-benchmarks.json \
-  --output plots/tps_vs_token_length.png
+  results/gfx1151/gemma4-26b-a4b-it-q4km/agent-multiturn-benchmarks.json \
+  --output plots/gfx1151/gemma4-26b-a4b-it-q4km/tps_vs_token_length.png
 ```
 
 The script creates two panels, with each configured concurrency (`streams`) as a
@@ -26,8 +26,8 @@ Generate the analogous TTFT chart:
 
 ```bash
 .venv/bin/python plotting/plot_ttft_vs_token_length.py \
-  results/gfx1151/agent-multiturn-benchmarks.json \
-  --output plots/ttft_vs_token_length.png
+  results/gfx1151/gemma4-26b-a4b-it-q4km/agent-multiturn-benchmarks.json \
+  --output plots/gfx1151/gemma4-26b-a4b-it-q4km/ttft_vs_token_length.png
 ```
 
 The TTFT chart uses mean TTFT on the left and p95 TTFT on the right. TTFT is a
