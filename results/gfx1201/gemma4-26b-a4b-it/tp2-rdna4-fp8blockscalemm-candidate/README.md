@@ -1,13 +1,13 @@
-# tp2-baseline
+# tp2-rdna4-fp8blockscalemm-candidate
 
 - **Hardware**: gfx1201
-- **Model**: Qwen/Qwen3.8-27B-FP8
+- **Model**: google/gemma-4-26B-A4B-it
 - **Workload**: simple-agent-multiturn-prefix-cache
 
 ## Serving configuration
 
 - **Tensor parallel (TP)**: 2
-- **Kernel / optimization tags**: baseline
+- **Kernel / optimization tags**: rdna4, fp8blockscalemm, candidate
 
 ## Workload parameters
 
@@ -18,12 +18,9 @@
 - **Output tokens**: 512
 - **Seed**: 20260715
 
-## Server startup
-
-Not recorded.
-
 ## Result files
 
 - `agent-multiturn-benchmarks.json`
 - `agent-multiturn-benchmarks.csv`
-- `agent-multiturn-benchmarks.20260825-222555.json` (archived upstream run)
+- `agent-multiturn-benchmarks.c1-retry.json`
+- `agent-multiturn-benchmarks.c1-retry.csv`

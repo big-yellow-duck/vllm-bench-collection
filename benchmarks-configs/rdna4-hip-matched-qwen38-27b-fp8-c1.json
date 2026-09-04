@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "labels": {
+      "workload": "rdna4-hip-matched-agent-multiturn-prefix-cache-c1"
+    }
+  },
+  "spec": {
+    "backend": {
+      "kind": "openai_http",
+      "target": "http://localhost:8000",
+      "request_format": "/v1/chat/completions",
+      "stream": true
+    },
+    "profile": {
+      "kind": "concurrent",
+      "streams": [1],
+      "rampup_duration": 0
+    },
+    "constraints": [
+      {
+        "kind": "max_requests",
+        "count": [8]
+      }
+    ],
+    "data": [
+      {
+        "kind": "synthetic_text",
+        "turns": 8,
+        "prompt_tokens": 2048,
+        "output_tokens": 512
+      }
+    ],
+    "seed": {
+      "kind": "static",
+      "value": 20260715
+    },
+    "outputs": [
+      {
+        "kind": "json",
+        "path": "results/gfx1201/qwen3.8-27b-fp8/tp2-hip-matched/agent-multiturn-benchmarks.json"
+      },
+      {
+        "kind": "csv",
+        "path": "results/gfx1201/qwen3.8-27b-fp8/tp2-hip-matched/agent-multiturn-benchmarks.csv"
+      }
+    ],
+    "metrics": {
+      "kind": "generative",
+      "sample_size": 0
+    }
+  }
+}

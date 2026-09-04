@@ -1,7 +1,7 @@
 # tp2-baseline
 
 - **Hardware**: gfx1201
-- **Model**: Qwen/Qwen3.8-27B-FP8
+- **Model**: google/gemma-4-26B-A4B-it
 - **Workload**: simple-agent-multiturn-prefix-cache
 
 ## Serving configuration
@@ -18,12 +18,7 @@
 - **Output tokens**: 512
 - **Seed**: 20260715
 
-## Server startup
-
-Not recorded.
-
 ## Result files
 
 - `agent-multiturn-benchmarks.json`
 - `agent-multiturn-benchmarks.csv`
-- `agent-multiturn-benchmarks.20260825-222555.json` (archived upstream run)
