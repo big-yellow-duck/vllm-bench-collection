@@ -1,0 +1,4 @@
+interface:
+  display_name: "GuideLLM Benchmark Compare"
+  short_description: "Chart and analyze two GuideLLM benchmark cases"
+  default_prompt: "Use $guidellm-benchmark-compare to compare two GuideLLM benchmark result cases."
