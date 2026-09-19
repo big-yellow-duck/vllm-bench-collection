@@ -23,6 +23,87 @@ caching when it is enabled on the inference server.
 
 The synthetic workload is deterministic with seed `20260715`.
 
+## Speculative-decoding prefix sweep
+
+Do not use the synthetic scenario above by itself to evaluate speculative
+decoding. Its generated prompts are synthetic, and GuideLLM 0.7.3 sends
+`ignore_eos: true` when `output_tokens` is configured. That makes the fixed
+2,048-in/512-out shape useful for engine and kernel comparisons, but it is not
+a representative test of draft-token acceptance.
+
+Use [`run-spec-decode-prefix-sweep.sh`](./run-spec-decode-prefix-sweep.sh) for
+the speculative-decoding comparison. It uses real ShareGPT conversations and
+resends the full generated conversation history on every turn, so each turn
+extends the prefix cached by vLLM. The sweep keeps the original request budget:
+
+| Concurrent conversations | Conversations | Turns (HTTP requests) |
+|---:|---:|---:|
+| 1 | 1 | 8 |
+| 2 | 2 | 16 |
+| 4 | 4 | 32 |
+| 8 | 8 | 64 |
+
+Responses are capped at 512 tokens, but EOS is respected. Prompt and output
+lengths are therefore natural rather than forced; inspect the saved detailed
+result to compare their distributions between runs. Sampling is greedy
+(`temperature=0`) and the dataset seed is fixed so the same server configuration
+produces a repeatable workload.
+
+The script resets vLLM's prefix cache before every sweep point. This prevents a
+conversation used at concurrency 1 from leaving cached KV blocks that make the
+later concurrency points artificially fast. Start vLLM with
+`VLLM_SERVER_DEV_MODE=1` so the reset endpoint is available. If that is not
+possible, set `RESET_PREFIX_CACHE=0`; in that case, restart the server and run
+each concurrency point separately for publishable comparisons.
+
+On its first run, the script uses
+[`prepare-sharegpt-prefix-sweep.py`](./prepare-sharegpt-prefix-sweep.py) to
+stream a pinned revision of `Aeala/ShareGPT_Vicuna_unfiltered`, select only
+conversations with eight valid user/assistant pairs, and cache a small local
+benchmark file under `.benchmark-data/`. This works around a current
+`vllm-bench` limitation: its ShareGPT loader honors the maximum turn count but
+does not filter on the requested minimum. Set `DATASET_PATH` only when supplying
+an already-filtered ShareGPT JSON file with exactly eight turns per conversation.
+
+The maintained Rust `vllm-bench` client automatically snapshots vLLM's
+speculative-decoding Prometheus counters before and after each run. Its output
+therefore includes acceptance rate and mean acceptance length alongside
+throughput, TTFT, TPOT, ITL, end-to-end latency, and per-turn metrics.
+Run the benchmark against an otherwise idle server because these Prometheus
+counters are server-wide.
+
+Run it with defaults for the current Qwen server:
+
+```bash
+benchmarks-configs/run-spec-decode-prefix-sweep.sh
+```
+
+Override the endpoint, model, result directory, binary, or a pinned local
+ShareGPT file without editing the script:
+
+```bash
+BASE_URL=http://127.0.0.1:8000 \
+MODEL=Qwen/Qwen3.8-27B-FP8 \
+VLLM_BENCH_BIN=/path/to/vllm/rust/target/release/vllm-bench \
+DATASET_PATH=/data/sharegpt-8turn.json \
+RESULT_DIR=/app/results/spec-decode-prefix-sweep \
+benchmarks-configs/run-spec-decode-prefix-sweep.sh
+```
+
+The default uses one conversation per concurrent stream, matching the original
+8/16/32/64-request budget. For a less noisy characterization, set
+`CONVERSATIONS_PER_STREAM=4` or higher; this deliberately increases the request
+count at every sweep point.
+
+For an apples-to-apples speculative-decoding comparison, run the sweep once
+with speculative decoding disabled and once with it enabled. Restart the server
+between configurations, keep all non-speculative server flags identical, and
+keep the same prepared dataset.
+Compare output-token throughput, TPOT/ITL, end-to-end latency, acceptance rate,
+mean acceptance length, and error counts. Do not compare only acceptance rate:
+a drafter can accept many tokens while still losing end-to-end performance to
+drafting and verification overhead.
+
 ## Run into a chosen output directory
 
 GuideLLM does not have one global `--output-dir` option. Set the `path` of each
@@ -141,4 +222,3 @@ Record the following alongside every report:
 
 The JSON report already captures the GuideLLM configuration and detected model,
 but server startup flags and hardware details should be saved separately.
-

@@ -32,3 +32,26 @@ Generate the analogous TTFT chart:
 
 The TTFT chart uses mean TTFT on the left and p95 TTFT on the right. TTFT is a
 latency metric, so it is not summed across concurrent requests.
+
+## Compare TP2 and TP4 step by step
+
+Use `plot_compare_multiturn.py` to compare multiple result sets. The command
+below compares baseline and FlyDSL-AR at TP2 and TP4. It creates separate TP2
+and TP4 figures. Each figure has a 2×2 layout with one subplot for each
+configured stream level and two lines per subplot: baseline and FlyDSL-AR.
+
+```bash
+.venv/bin/python plotting/plot_compare_multiturn.py \
+  --report "TP2 baseline=results/gfx1201/qwen3.8-27b-fp8/tp2-baseline/agent-multiturn-benchmarks.json" \
+  --report "TP2 FlyDSL-AR=results/gfx1201/qwen3.8-27b-fp8/tp2-flydslar/agent-multiturn-benchmarks.json" \
+  --report "TP4 baseline=results/gfx1201/qwen3.8-27b-fp8/tp4-baseline/agent-multiturn-benchmarks.json" \
+  --report "TP4 FlyDSL-AR=results/gfx1201/qwen3.8-27b-fp8/tp4-flydslar/agent-multiturn-benchmarks.json" \
+  --output-dir plots/gfx1201/qwen3.8-27b-fp8/tp2-vs-tp4-flydslar
+```
+
+The script recognizes case-insensitive `TP<number>` tokens in report labels and
+uses them to split the output. It writes output-TPS, TTFT, and E2E-latency charts
+for each TP case. The x-axis is the exact conversation `turn_index`, with the
+corresponding mean prompt length shown below it. Values from simultaneous
+requests at the same step are averaged within a line. Color identifies the
+result set; each subplot identifies the configured stream count.
