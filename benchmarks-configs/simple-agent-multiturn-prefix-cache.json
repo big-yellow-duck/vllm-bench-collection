@@ -7,7 +7,7 @@
   "spec": {
     "backend": {
       "kind": "openai_http",
-      "target": "http://localhost:8000",
+      "target": "http://localhost:8001",
       "request_format": "/v1/chat/completions",
       "stream": true
     },
