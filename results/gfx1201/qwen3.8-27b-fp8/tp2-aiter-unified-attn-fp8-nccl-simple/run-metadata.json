@@ -1,0 +1,16 @@
+{
+  "model": "Qwen/Qwen3.8-27B-FP8",
+  "hardware": "gfx1201 x2 (R9700)",
+  "tensor_parallel_size": 2,
+  "attention_backend": "ROCM_AITER_UNIFIED_ATTN",
+  "kv_cache_dtype": "fp8",
+  "NCCL_PROTO": "Simple",
+  "VLLM_ROCM_USE_AITER": "1",
+  "VLLM_ROCM_USE_AITER_UNIFIED_ATTENTION": "1",
+  "aiter_commit": "e4ceb9dd95e12595dc9d87a06eaef79dfd6cdb8c",
+  "vllm_commit": "2342343746093e5cd33799cd60186d10c4addea9",
+  "rocm": "7.2.3",
+  "benchmark_config": "benchmarks-configs/simple-agent-multiturn-prefix-cache.json",
+  "baseline": "tp2-rocm723-segmented-attn-autotune-fp8-nccl-simple",
+  "comparison_scope": "Same server build and ROCm 7.2.3; attention backend and segmented autotune differ"
+}
