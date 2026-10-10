@@ -1,0 +1,6 @@
+{
+  "phase": "complete",
+  "updated": "2026-10-10T21:29:16.217575+00:00",
+  "total": 12,
+  "report": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/comparisons/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/report.md"
+}

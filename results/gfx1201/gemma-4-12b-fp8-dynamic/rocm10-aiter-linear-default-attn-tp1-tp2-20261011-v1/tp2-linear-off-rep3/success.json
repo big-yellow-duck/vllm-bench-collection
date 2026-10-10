@@ -1,0 +1,51 @@
+{
+  "case": {
+    "tp": 2,
+    "arm": "linear-off",
+    "repeat": 3
+  },
+  "counts": [
+    {
+      "streams": 1,
+      "successful": 8,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 1,
+      "mean_concurrency": 0.9999471324145985
+    },
+    {
+      "streams": 2,
+      "successful": 16,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 2,
+      "mean_concurrency": 1.9994070513747333
+    },
+    {
+      "streams": 4,
+      "successful": 32,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 4,
+      "mean_concurrency": 3.9993037863579404
+    },
+    {
+      "streams": 8,
+      "successful": 64,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 8,
+      "mean_concurrency": 7.997867206002847
+    }
+  ],
+  "selected": [
+    "RowWiseTorchFP8ScaledMMLinearKernel"
+  ],
+  "attention": [
+    "TRITON_ATTN"
+  ],
+  "configs_loaded": [],
+  "head": "6c0ee98741189ecc468b931335abfbc3a5b594ac",
+  "report_sha256": "8eaa1d79a0117ccbf8cf0bece17704b5e2166d1de192923fc8b3d9ae34b2cd05",
+  "completed": "2026-10-10T21:28:57.709818+00:00"
+}

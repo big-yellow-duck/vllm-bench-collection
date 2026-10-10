@@ -1,0 +1,146 @@
+{
+  "case": {
+    "tp": 1,
+    "arm": "linear-off",
+    "repeat": 2
+  },
+  "head": "6c0ee98741189ecc468b931335abfbc3a5b594ac",
+  "model": "RedHatAI/gemma-4-12B-it-FP8-Dynamic",
+  "revision": "2083adceb2a3df0465e6021e08a7196d21dbbb44",
+  "source_root": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/logs/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/source-vllm",
+  "resolved_vllm": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/logs/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/source-vllm/vllm/__init__.py",
+  "config_sha256": {},
+  "command": [
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.venv/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "RedHatAI/gemma-4-12B-it-FP8-Dynamic",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8010",
+    "--dtype",
+    "bfloat16",
+    "--max-num-seqs",
+    "8",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--tensor-parallel-size",
+    "1",
+    "--max-num-batched-tokens",
+    "8192",
+    "--max-model-len",
+    "32768",
+    "--kv-cache-dtype",
+    "fp8",
+    "--load-format",
+    "safetensors",
+    "--linear-backend",
+    "auto"
+  ],
+  "env": {
+    "PYTORCH_ROCM_ARCH": "gfx1201",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "NCCL_PROTO": "Simple",
+    "VLLM_ROCM_USE_AITER": "1",
+    "VLLM_ROCM_USE_AITER_LINEAR": "0",
+    "VLLM_DISABLED_KERNELS": "",
+    "VLLM_LOGGING_LEVEL": "DEBUG",
+    "VLLM_CACHE_ROOT": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.cache/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-off-rep2/attempt-1791659864976707600/vllm",
+    "TORCHINDUCTOR_CACHE_DIR": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.cache/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-off-rep2/attempt-1791659864976707600/inductor",
+    "TRITON_CACHE_DIR": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.cache/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-off-rep2/attempt-1791659864976707600/triton"
+  },
+  "client_env": {
+    "GUIDELLM__MP_MAX_PENDING_BUFFER_PERCENT": "2.0",
+    "GUIDELLM__MAX_WORKER_PROCESSES": "1"
+  },
+  "hardware": {
+    "torch": "2.13.0+rocm10.0.0",
+    "hip": "7.15.26333",
+    "triton": "3.8.0",
+    "devices": [
+      {
+        "name": "AMD Radeon AI PRO R9700",
+        "memory": [
+          34126954496,
+          34208743424
+        ]
+      },
+      {
+        "name": "AMD Radeon AI PRO R9700",
+        "memory": [
+          34126954496,
+          34208743424
+        ]
+      }
+    ]
+  },
+  "workload": {
+    "metadata": {
+      "labels": {
+        "workload": "simple-agent-multiturn-prefix-cache"
+      }
+    },
+    "spec": {
+      "backend": {
+        "kind": "openai_http",
+        "target": "http://127.0.0.1:8010",
+        "request_format": "/v1/chat/completions",
+        "stream": true
+      },
+      "profile": {
+        "kind": "concurrent",
+        "streams": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "rampup_duration": 0,
+        "warmup": {
+          "mode": "requests",
+          "value": 1
+        }
+      },
+      "constraints": [
+        {
+          "kind": "max_requests",
+          "count": [
+            8,
+            16,
+            32,
+            64
+          ]
+        }
+      ],
+      "data": [
+        {
+          "kind": "synthetic_text",
+          "turns": 8,
+          "prompt_tokens": 2048,
+          "output_tokens": 512
+        }
+      ],
+      "seed": {
+        "kind": "static",
+        "value": 20260715
+      },
+      "outputs": [
+        {
+          "kind": "json",
+          "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-off-rep2/agent-multiturn-benchmarks.json"
+        }
+      ],
+      "metrics": {
+        "kind": "generative",
+        "sample_size": 0
+      },
+      "tokenizer": {
+        "kind": "huggingface_auto",
+        "model": "/home/ellm/.cache/huggingface/hub/models--RedHatAI--gemma-4-12B-it-FP8-Dynamic/snapshots/2083adceb2a3df0465e6021e08a7196d21dbbb44"
+      }
+    }
+  },
+  "started": "2026-10-10T19:17:48.013250+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "case": {
+    "tp": 1,
+    "arm": "linear-on",
+    "repeat": 2
+  },
+  "counts": [
+    {
+      "streams": 1,
+      "successful": 8,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 1,
+      "mean_concurrency": 0.9999401269535869
+    },
+    {
+      "streams": 2,
+      "successful": 16,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 2,
+      "mean_concurrency": 1.9995408434077468
+    },
+    {
+      "streams": 4,
+      "successful": 32,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 4,
+      "mean_concurrency": 3.9994923170023213
+    },
+    {
+      "streams": 8,
+      "successful": 64,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 8,
+      "mean_concurrency": 7.998678972515881
+    }
+  ],
+  "selected": [
+    "AiterPerTokenFp8ScaledMMLinearKernel"
+  ],
+  "attention": [
+    "TRITON_ATTN"
+  ],
+  "configs_loaded": [],
+  "head": "6c0ee98741189ecc468b931335abfbc3a5b594ac",
+  "report_sha256": "ccfdfeffc951e433de21fde04140fdd7f2a9cc90c981ff86a0023ec6c7c60b49",
+  "completed": "2026-10-10T19:17:35.833452+00:00"
+}

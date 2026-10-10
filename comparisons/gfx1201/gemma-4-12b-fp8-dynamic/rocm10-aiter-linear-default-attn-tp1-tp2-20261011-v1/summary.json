@@ -1,0 +1,1709 @@
+{
+  "manifest": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/logs/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/manifest.json",
+  "head": "6c0ee98741189ecc468b931335abfbc3a5b594ac",
+  "repeats": 3,
+  "metrics": {
+    "1": {
+      "linear-off": {
+        "1": {
+          "output_tokens_per_second": {
+            "mean": 18.71943544723078,
+            "run_means": [
+              18.700716768253606,
+              18.74206628850016,
+              18.715523284938573
+            ],
+            "minimum": 18.700716768253606,
+            "maximum": 18.74206628850016,
+            "stdev": 0.0209505242537131
+          },
+          "time_to_first_token_ms": {
+            "mean": 4768.842905759811,
+            "run_means": [
+              4800.413459539413,
+              4731.081694364548,
+              4775.033563375473
+            ],
+            "minimum": 4731.081694364548,
+            "maximum": 4800.413459539413,
+            "stdev": 35.07800731015721
+          },
+          "request_latency": {
+            "mean": 28.731154918670654,
+            "run_means": [
+              28.771082371473312,
+              28.68499618768692,
+              28.73738619685173
+            ],
+            "minimum": 28.68499618768692,
+            "maximum": 28.771082371473312,
+            "stdev": 0.0433800574060661
+          }
+        },
+        "2": {
+          "output_tokens_per_second": {
+            "mean": 15.832474835438896,
+            "run_means": [
+              15.836327088864355,
+              15.825394467579116,
+              15.83570294987322
+            ],
+            "minimum": 15.825394467579116,
+            "maximum": 15.836327088864355,
+            "stdev": 0.006139714500074585
+          },
+          "time_to_first_token_ms": {
+            "mean": 7106.153875589371,
+            "run_means": [
+              7129.330292344093,
+              7107.345476746559,
+              7081.78585767746
+            ],
+            "minimum": 7081.78585767746,
+            "maximum": 7129.330292344093,
+            "stdev": 23.794605521647284
+          },
+          "request_latency": {
+            "mean": 34.544694458444916,
+            "run_means": [
+              34.553896367549896,
+              34.55671834945679,
+              34.523468658328056
+            ],
+            "minimum": 34.523468658328056,
+            "maximum": 34.55671834945679,
+            "stdev": 0.018436155738691198
+          }
+        },
+        "4": {
+          "output_tokens_per_second": {
+            "mean": 12.23532782011747,
+            "run_means": [
+              12.123002611862663,
+              12.192096834196422,
+              12.390884014293329
+            ],
+            "minimum": 12.123002611862663,
+            "maximum": 12.390884014293329,
+            "stdev": 0.13907480019699675
+          },
+          "time_to_first_token_ms": {
+            "mean": 15264.843416710695,
+            "run_means": [
+              16314.322039484978,
+              15336.406461894512,
+              14143.801748752594
+            ],
+            "minimum": 14143.801748752594,
+            "maximum": 16314.322039484978,
+            "stdev": 1087.0283046900083
+          },
+          "request_latency": {
+            "mean": 46.534454986453056,
+            "run_means": [
+              47.58894641697407,
+              46.69544576108456,
+              45.318972781300545
+            ],
+            "minimum": 45.318972781300545,
+            "maximum": 47.58894641697407,
+            "stdev": 1.1435180797873534
+          }
+        },
+        "8": {
+          "output_tokens_per_second": {
+            "mean": 8.104174712316656,
+            "run_means": [
+              8.199735420091557,
+              8.058590726578139,
+              8.054197990280276
+            ],
+            "minimum": 8.054197990280276,
+            "maximum": 8.199735420091557,
+            "stdev": 0.08278714082437838
+          },
+          "time_to_first_token_ms": {
+            "mean": 24518.4073249499,
+            "run_means": [
+              24503.82824242115,
+              24164.426282048225,
+              24886.967450380325
+            ],
+            "minimum": 24164.426282048225,
+            "maximum": 24886.967450380325,
+            "stdev": 361.4911440398147
+          },
+          "request_latency": {
+            "mean": 72.55588622887929,
+            "run_means": [
+              72.04904405772686,
+              72.76784199103713,
+              72.85077263787389
+            ],
+            "minimum": 72.04904405772686,
+            "maximum": 72.85077263787389,
+            "stdev": 0.4408924051172516
+          }
+        }
+      },
+      "linear-on": {
+        "1": {
+          "output_tokens_per_second": {
+            "mean": 19.707896281678323,
+            "run_means": [
+              19.53559059040548,
+              19.982362951369637,
+              19.605735303259852
+            ],
+            "minimum": 19.53559059040548,
+            "maximum": 19.982362951369637,
+            "stdev": 0.2402686720401483
+          },
+          "time_to_first_token_ms": {
+            "mean": 6304.650614658992,
+            "run_means": [
+              6733.538627624512,
+              5521.412909030914,
+              6659.0003073215485
+            ],
+            "minimum": 5521.412909030914,
+            "maximum": 6733.538627624512,
+            "stdev": 679.3268491209129
+          },
+          "request_latency": {
+            "mean": 27.380431940158207,
+            "run_means": [
+              27.806631207466125,
+              26.590164333581924,
+              27.744500279426575
+            ],
+            "minimum": 26.590164333581924,
+            "maximum": 27.806631207466125,
+            "stdev": 0.685096511856264
+          }
+        },
+        "2": {
+          "output_tokens_per_second": {
+            "mean": 17.40313065878441,
+            "run_means": [
+              17.415848827938188,
+              17.170318997439175,
+              17.623224150975872
+            ],
+            "minimum": 17.170318997439175,
+            "maximum": 17.623224150975872,
+            "stdev": 0.22672027565922048
+          },
+          "time_to_first_token_ms": {
+            "mean": 7687.653576334317,
+            "run_means": [
+              8050.953209400177,
+              7976.641967892647,
+              7035.365551710129
+            ],
+            "minimum": 7035.365551710129,
+            "maximum": 8050.953209400177,
+            "stdev": 566.1186187140397
+          },
+          "request_latency": {
+            "mean": 32.382542222738266,
+            "run_means": [
+              32.625421583652496,
+              32.985585913062096,
+              31.536619171500206
+            ],
+            "minimum": 31.536619171500206,
+            "maximum": 32.985585913062096,
+            "stdev": 0.7543997232944208
+          }
+        },
+        "4": {
+          "output_tokens_per_second": {
+            "mean": 13.332961125991837,
+            "run_means": [
+              13.37221045422202,
+              13.370593522811204,
+              13.256079400942287
+            ],
+            "minimum": 13.256079400942287,
+            "maximum": 13.37221045422202,
+            "stdev": 0.06658643519323425
+          },
+          "time_to_first_token_ms": {
+            "mean": 14022.330495218435,
+            "run_means": [
+              14158.961035311222,
+              13694.928996264935,
+              14213.101454079151
+            ],
+            "minimum": 13694.928996264935,
+            "maximum": 14213.101454079151,
+            "stdev": 284.82732027290035
+          },
+          "request_latency": {
+            "mean": 42.26782636592785,
+            "run_means": [
+              42.13674529641867,
+              42.198540300130844,
+              42.468193501234055
+            ],
+            "minimum": 42.13674529641867,
+            "maximum": 42.468193501234055,
+            "stdev": 0.1762523682225479
+          }
+        },
+        "8": {
+          "output_tokens_per_second": {
+            "mean": 8.747294675888625,
+            "run_means": [
+              8.792439176930454,
+              8.813920473268814,
+              8.63552437746661
+            ],
+            "minimum": 8.63552437746661,
+            "maximum": 8.813920473268814,
+            "stdev": 0.09738999553395654
+          },
+          "time_to_first_token_ms": {
+            "mean": 24010.96572851141,
+            "run_means": [
+              23972.42373600602,
+              24068.887919187546,
+              23991.58553034067
+            ],
+            "minimum": 23972.42373600602,
+            "maximum": 24068.887919187546,
+            "stdev": 51.06886252965278
+          },
+          "request_latency": {
+            "mean": 68.46421152104934,
+            "run_means": [
+              68.2307552434504,
+              68.04770554974675,
+              69.11417376995087
+            ],
+            "minimum": 68.04770554974675,
+            "maximum": 69.11417376995087,
+            "stdev": 0.570276241254269
+          }
+        }
+      }
+    },
+    "2": {
+      "linear-off": {
+        "1": {
+          "output_tokens_per_second": {
+            "mean": 21.565825509544293,
+            "run_means": [
+              21.44737509776331,
+              21.617209976807413,
+              21.632891454062154
+            ],
+            "minimum": 21.44737509776331,
+            "maximum": 21.632891454062154,
+            "stdev": 0.10288028100921956
+          },
+          "time_to_first_token_ms": {
+            "mean": 2735.0847025712333,
+            "run_means": [
+              2900.385171175003,
+              2651.5358686447144,
+              2653.333067893982
+            ],
+            "minimum": 2651.5358686447144,
+            "maximum": 2900.385171175003,
+            "stdev": 143.15722535644102
+          },
+          "request_latency": {
+            "mean": 24.862856407960255,
+            "run_means": [
+              25.03271782398224,
+              24.78520965576172,
+              24.77064174413681
+            ],
+            "minimum": 24.77064174413681,
+            "maximum": 25.03271782398224,
+            "stdev": 0.14728452567063055
+          }
+        },
+        "2": {
+          "output_tokens_per_second": {
+            "mean": 19.459828844885944,
+            "run_means": [
+              19.649591791750414,
+              19.350277683210106,
+              19.379617059697313
+            ],
+            "minimum": 19.350277683210106,
+            "maximum": 19.649591791750414,
+            "stdev": 0.16499297486614434
+          },
+          "time_to_first_token_ms": {
+            "mean": 4149.258802334468,
+            "run_means": [
+              3909.248009324074,
+              4292.900085449219,
+              4245.62831223011
+            ],
+            "minimum": 3909.248009324074,
+            "maximum": 4292.900085449219,
+            "stdev": 209.19498250897
+          },
+          "request_latency": {
+            "mean": 27.892152304450672,
+            "run_means": [
+              27.58609640598297,
+              28.081152006983757,
+              28.009208500385284
+            ],
+            "minimum": 27.58609640598297,
+            "maximum": 28.081152006983757,
+            "stdev": 0.2674820120598286
+          }
+        },
+        "4": {
+          "output_tokens_per_second": {
+            "mean": 16.139954294065536,
+            "run_means": [
+              16.363953129934664,
+              16.014040352677405,
+              16.041869399584538
+            ],
+            "minimum": 16.014040352677405,
+            "maximum": 16.363953129934664,
+            "stdev": 0.19448707621840436
+          },
+          "time_to_first_token_ms": {
+            "mean": 8257.381675144037,
+            "run_means": [
+              8159.792482852936,
+              8242.930509150028,
+              8369.422033429146
+            ],
+            "minimum": 8159.792482852936,
+            "maximum": 8369.422033429146,
+            "stdev": 105.55929266358191
+          },
+          "request_latency": {
+            "mean": 34.37939473986626,
+            "run_means": [
+              33.70309042930603,
+              34.74475207924843,
+              34.69034171104431
+            ],
+            "minimum": 33.70309042930603,
+            "maximum": 34.74475207924843,
+            "stdev": 0.5863282036571192
+          }
+        },
+        "8": {
+          "output_tokens_per_second": {
+            "mean": 11.636770153592835,
+            "run_means": [
+              11.764693357783932,
+              11.548164510522467,
+              11.597452592472107
+            ],
+            "minimum": 11.548164510522467,
+            "maximum": 11.764693357783932,
+            "stdev": 0.11349267986727743
+          },
+          "time_to_first_token_ms": {
+            "mean": 13257.779921094576,
+            "run_means": [
+              13547.393873333931,
+              13014.681782573462,
+              13211.264107376337
+            ],
+            "minimum": 13014.681782573462,
+            "maximum": 13547.393873333931,
+            "stdev": 269.3851027896682
+          },
+          "request_latency": {
+            "mean": 49.38953412696719,
+            "run_means": [
+              48.608796525746584,
+              50.042328134179115,
+              49.517477720975876
+            ],
+            "minimum": 48.608796525746584,
+            "maximum": 50.042328134179115,
+            "stdev": 0.725279525789667
+          }
+        }
+      },
+      "linear-on": {
+        "1": {
+          "output_tokens_per_second": {
+            "mean": 22.66012122700441,
+            "run_means": [
+              22.62508845345618,
+              22.763036939367492,
+              22.59223828818956
+            ],
+            "minimum": 22.59223828818956,
+            "maximum": 22.763036939367492,
+            "stdev": 0.0906284515365428
+          },
+          "time_to_first_token_ms": {
+            "mean": 3678.3297260602317,
+            "run_means": [
+              3681.5076172351837,
+              3622.6560473442078,
+              3730.825513601303
+            ],
+            "minimum": 3622.6560473442078,
+            "maximum": 3730.825513601303,
+            "stdev": 54.15470987666817
+          },
+          "request_latency": {
+            "mean": 23.461051414410274,
+            "run_means": [
+              23.490393102169037,
+              23.374282389879227,
+              23.518478751182556
+            ],
+            "minimum": 23.374282389879227,
+            "maximum": 23.518478751182556,
+            "stdev": 0.07644506938763067
+          }
+        },
+        "2": {
+          "output_tokens_per_second": {
+            "mean": 21.584391555509384,
+            "run_means": [
+              21.56918685627638,
+              21.60581453579534,
+              21.578173274456436
+            ],
+            "minimum": 21.56918685627638,
+            "maximum": 21.60581453579534,
+            "stdev": 0.0190891851888962
+          },
+          "time_to_first_token_ms": {
+            "mean": 4582.269251346588,
+            "run_means": [
+              4590.144783258438,
+              4576.906070113182,
+              4579.756900668144
+            ],
+            "minimum": 4576.906070113182,
+            "maximum": 4590.144783258438,
+            "stdev": 6.967769433915129
+          },
+          "request_latency": {
+            "mean": 25.845252106587093,
+            "run_means": [
+              25.871226742863655,
+              25.8188985735178,
+              25.845631003379822
+            ],
+            "minimum": 25.8188985735178,
+            "maximum": 25.871226742863655,
+            "stdev": 0.02616614222343053
+          }
+        },
+        "4": {
+          "output_tokens_per_second": {
+            "mean": 16.986681544474255,
+            "run_means": [
+              16.844929513043326,
+              17.163793120969405,
+              16.951321999410037
+            ],
+            "minimum": 16.844929513043326,
+            "maximum": 17.163793120969405,
+            "stdev": 0.1623459983654372
+          },
+          "time_to_first_token_ms": {
+            "mean": 8598.216334978739,
+            "run_means": [
+              8526.055291295052,
+              8460.870370268822,
+              8807.723343372345
+            ],
+            "minimum": 8460.870370268822,
+            "maximum": 8807.723343372345,
+            "stdev": 184.34250298514362
+          },
+          "request_latency": {
+            "mean": 32.27768777559201,
+            "run_means": [
+              32.39645016938448,
+              32.19566525518894,
+              32.240947902202606
+            ],
+            "minimum": 32.19566525518894,
+            "maximum": 32.39645016938448,
+            "stdev": 0.10531386026838713
+          }
+        },
+        "8": {
+          "output_tokens_per_second": {
+            "mean": 13.065411132370429,
+            "run_means": [
+              12.882977710125829,
+              13.46021732202735,
+              12.853038364958108
+            ],
+            "minimum": 12.853038364958108,
+            "maximum": 13.46021732202735,
+            "stdev": 0.34223973562523513
+          },
+          "time_to_first_token_ms": {
+            "mean": 13547.214414924383,
+            "run_means": [
+              12957.575429230928,
+              14153.066333383322,
+              13531.0014821589
+            ],
+            "minimum": 12957.575429230928,
+            "maximum": 14153.066333383322,
+            "stdev": 597.9103359780798
+          },
+          "request_latency": {
+            "mean": 44.49407341207067,
+            "run_means": [
+              44.445326425135136,
+              43.96276646107435,
+              45.07412735000253
+            ],
+            "minimum": 43.96276646107435,
+            "maximum": 45.07412735000253,
+            "stdev": 0.5572817581002233
+          }
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "1": {
+      "1": {
+        "output_tokens_per_second": {
+          "ratio": 1.0528039874511157,
+          "percent_change": 5.28039874511157,
+          "paired_run_ratios": [
+            1.0446439477426426,
+            1.0661771569781773,
+            1.0475654356422768
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 1.322050388165278,
+          "percent_change": 32.20503881652781,
+          "paired_run_ratios": [
+            1.4026997225090225,
+            1.1670508491975047,
+            1.3945452359531267
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9529875153875317,
+          "percent_change": -4.701248461246832,
+          "paired_run_ratios": [
+            0.9664784539019134,
+            0.9269711649812175,
+            0.9654496790131202
+          ]
+        }
+      },
+      "2": {
+        "output_tokens_per_second": {
+          "ratio": 1.099204694128413,
+          "percent_change": 9.920469412841303,
+          "paired_run_ratios": [
+            1.0997404088846148,
+            1.0849852136460392,
+            1.1128791823615864
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 1.0818304403374206,
+          "percent_change": 8.18304403374206,
+          "paired_run_ratios": [
+            1.1292720184455163,
+            1.1223095871714983,
+            0.9934451130124182
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9374100055130729,
+          "percent_change": -6.258999448692714,
+          "paired_run_ratios": [
+            0.9441893683020807,
+            0.9545346748349619,
+            0.9134835054846862
+          ]
+        }
+      },
+      "4": {
+        "output_tokens_per_second": {
+          "ratio": 1.0897101673131817,
+          "percent_change": 8.971016731318171,
+          "paired_run_ratios": [
+            1.1030444257379748,
+            1.0966607060821016,
+            1.069825154173901
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 0.9186029697407797,
+          "percent_change": -8.13970302592203,
+          "paired_run_ratios": [
+            0.8678853464485247,
+            0.8929685731981568,
+            1.0048996519152051
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9083124832606874,
+          "percent_change": -9.168751673931263,
+          "paired_run_ratios": [
+            0.8854313547355462,
+            0.9036971296095565,
+            0.9370952361646914
+          ]
+        }
+      },
+      "8": {
+        "output_tokens_per_second": {
+          "ratio": 1.0793566262329661,
+          "percent_change": 7.935662623296613,
+          "paired_run_ratios": [
+            1.0722832782368337,
+            1.0937297565192774,
+            1.0721768185842802
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 0.9793036476752665,
+          "percent_change": -2.0696352324733547,
+          "paired_run_ratios": [
+            0.9783134087801367,
+            0.9960463219053681,
+            0.9640220560490197
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9436065780394072,
+          "percent_change": -5.639342196059283,
+          "paired_run_ratios": [
+            0.947004309852922,
+            0.9351343077911839,
+            0.9487088642628833
+          ]
+        }
+      },
+      "geomeans": {
+        "output_tokens_per_second": 1.0801287231486232,
+        "time_to_first_token_ms": 1.0650331007511462,
+        "request_latency": 0.9354288490866574
+      },
+      "paired_tps_geomeans": [
+        1.0796680588751117,
+        1.085322673407101,
+        1.07535559558344
+      ]
+    },
+    "2": {
+      "1": {
+        "output_tokens_per_second": {
+          "ratio": 1.0507421205358367,
+          "percent_change": 5.074212053583671,
+          "paired_run_ratios": [
+            1.0549117712691887,
+            1.0530053121466374,
+            1.0443466762713896
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 1.344868669918069,
+          "percent_change": 34.4868669918069,
+          "paired_run_ratios": [
+            1.2693167975837267,
+            1.3662481772105404,
+            1.4060901583541316
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9436185058326134,
+          "percent_change": -5.638149416738658,
+          "paired_run_ratios": [
+            0.9383876440162002,
+            0.9430738216267418,
+            0.9494497152763255
+          ]
+        }
+      },
+      "2": {
+        "output_tokens_per_second": {
+          "ratio": 1.1091768446453616,
+          "percent_change": 10.917684464536158,
+          "paired_run_ratios": [
+            1.097691345696651,
+            1.116563539268603,
+            1.1134468347845394
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 1.104358505853744,
+          "percent_change": 10.435850585374396,
+          "paired_run_ratios": [
+            1.174175895801529,
+            1.0661571383006563,
+            1.0786994441966413
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9266137594718009,
+          "percent_change": -7.338624052819909,
+          "paired_run_ratios": [
+            0.9378357257264065,
+            0.9194387241341332,
+            0.9227547791300242
+          ]
+        }
+      },
+      "4": {
+        "output_tokens_per_second": {
+          "ratio": 1.0524615643254982,
+          "percent_change": 5.24615643254982,
+          "paired_run_ratios": [
+            1.0293924322130212,
+            1.0717965449674773,
+            1.0566924326069538
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 1.04127636013976,
+          "percent_change": 4.12763601397601,
+          "paired_run_ratios": [
+            1.0448862895976563,
+            1.0264396091750223,
+            1.0523693641200713
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9388672494039834,
+          "percent_change": -6.113275059601664,
+          "paired_run_ratios": [
+            0.9612308472820231,
+            0.9266339037836465,
+            0.9293926295323319
+          ]
+        }
+      },
+      "8": {
+        "output_tokens_per_second": {
+          "ratio": 1.1227695451505075,
+          "percent_change": 12.276954515050754,
+          "paired_run_ratios": [
+            1.0950542711427325,
+            1.165572010146085,
+            1.1082639280026891
+          ]
+        },
+        "time_to_first_token_ms": {
+          "ratio": 1.021831294194987,
+          "percent_change": 2.183129419498697,
+          "paired_run_ratios": [
+            0.9564625898074777,
+            1.087469257399297,
+            1.0242018759282876
+          ]
+        },
+        "request_latency": {
+          "ratio": 0.9008806055487057,
+          "percent_change": -9.911939445129425,
+          "paired_run_ratios": [
+            0.9143473939247563,
+            0.8785116140719201,
+            0.9102670294312846
+          ]
+        }
+      },
+      "geomeans": {
+        "output_tokens_per_second": 1.083299271884047,
+        "time_to_first_token_ms": 1.1212018125876018,
+        "request_latency": 0.9273456847209063
+      },
+      "paired_tps_geomeans": [
+        1.0688782705652162,
+        1.100883510400803,
+        1.0802555152766902
+      ]
+    }
+  },
+  "sources": {
+    "tp1-linear-off-rep1": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-off-rep1/agent-multiturn-benchmarks.json",
+      "sha256": "9ba7ddf907f29b0bc4ae7285b09af40aca2a6807b6a261a6038bac7a978d8e65",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999600087395131
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9995213836771353
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.999012456935055
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.998663441766387
+        }
+      ],
+      "selected": [
+        "RowWiseTorchFP8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11042.125,
+          "minimum": 2061,
+          "maximum": 20026
+        },
+        "2": {
+          "mean": 11054.3125,
+          "minimum": 2061,
+          "maximum": 20049
+        },
+        "4": {
+          "mean": 11012.8125,
+          "minimum": 2061,
+          "maximum": 20044
+        },
+        "8": {
+          "mean": 11040.390625,
+          "minimum": 2060,
+          "maximum": 20043
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "kernel_unified_attention"
+      ]
+    },
+    "tp1-linear-on-rep1": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-on-rep1/agent-multiturn-benchmarks.json",
+      "sha256": "6c7b82fdfc6b1c1f403628a3637d68ed2e7acb42c27cc0a603a494a906101ccf",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999448250923867
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9995331343448732
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9994486034743173
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.998657912083936
+        }
+      ],
+      "selected": [
+        "AiterPerTokenFp8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11050,
+          "minimum": 2061,
+          "maximum": 20043
+        },
+        "2": {
+          "mean": 11051.5625,
+          "minimum": 2061,
+          "maximum": 20047
+        },
+        "4": {
+          "mean": 11045.8125,
+          "minimum": 2061,
+          "maximum": 20046
+        },
+        "8": {
+          "mean": 11047.296875,
+          "minimum": 2060,
+          "maximum": 20048
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "_gemm_a8w8_kernel",
+        "kernel_unified_attention"
+      ]
+    },
+    "tp2-linear-on-rep1": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp2-linear-on-rep1/agent-multiturn-benchmarks.json",
+      "sha256": "650f2814055a4eb337d661030b7f9932b0b2e7cbeac526964eebd8ced45274c7",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999417521826427
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9994302876200445
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.999306449489594
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.998039182460669
+        }
+      ],
+      "selected": [
+        "AiterPerTokenFp8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11054,
+          "minimum": 2061,
+          "maximum": 20048
+        },
+        "2": {
+          "mean": 11051.25,
+          "minimum": 2061,
+          "maximum": 20047
+        },
+        "4": {
+          "mean": 11052.125,
+          "minimum": 2061,
+          "maximum": 20051
+        },
+        "8": {
+          "mean": 11041.40625,
+          "minimum": 2060,
+          "maximum": 20047
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "_gemm_a8w8_kernel",
+        "kernel_unified_attention"
+      ]
+    },
+    "tp2-linear-off-rep1": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp2-linear-off-rep1/agent-multiturn-benchmarks.json",
+      "sha256": "d726929ff260bb2f6104c84dac4498008d4b2c2585f949d8dfc7059d3061045e",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999419314643518
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.999423917741386
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.99923663600928
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.997710753290272
+        }
+      ],
+      "selected": [
+        "RowWiseTorchFP8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11046.625,
+          "minimum": 2061,
+          "maximum": 20037
+        },
+        "2": {
+          "mean": 11048.8125,
+          "minimum": 2061,
+          "maximum": 20046
+        },
+        "4": {
+          "mean": 11049.0625,
+          "minimum": 2061,
+          "maximum": 20049
+        },
+        "8": {
+          "mean": 11049.109375,
+          "minimum": 2060,
+          "maximum": 20050
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "kernel_unified_attention"
+      ]
+    },
+    "tp2-linear-off-rep2": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp2-linear-off-rep2/agent-multiturn-benchmarks.json",
+      "sha256": "e10dbe2c544549991c74dca7eea244ce6608d6fa839481944f3199562d203239",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999343207194655
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9994405909840411
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9993019713947238
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.997077853221656
+        }
+      ],
+      "selected": [
+        "RowWiseTorchFP8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11032.5,
+          "minimum": 2061,
+          "maximum": 20016
+        },
+        "2": {
+          "mean": 11051.75,
+          "minimum": 2061,
+          "maximum": 20050
+        },
+        "4": {
+          "mean": 11030.3125,
+          "minimum": 2061,
+          "maximum": 20049
+        },
+        "8": {
+          "mean": 11049.359375,
+          "minimum": 2060,
+          "maximum": 20047
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "kernel_unified_attention"
+      ]
+    },
+    "tp2-linear-on-rep2": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp2-linear-on-rep2/agent-multiturn-benchmarks.json",
+      "sha256": "3b162545f464b23a20163d0addc99729618371e40529173deaec76b5c5f283a5",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999412486804428
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9994340685087206
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.999321524827577
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.99732498138681
+        }
+      ],
+      "selected": [
+        "AiterPerTokenFp8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11054,
+          "minimum": 2061,
+          "maximum": 20048
+        },
+        "2": {
+          "mean": 11051.25,
+          "minimum": 2061,
+          "maximum": 20047
+        },
+        "4": {
+          "mean": 11048.8125,
+          "minimum": 2061,
+          "maximum": 20051
+        },
+        "8": {
+          "mean": 11050.484375,
+          "minimum": 2060,
+          "maximum": 20047
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "_gemm_a8w8_kernel",
+        "kernel_unified_attention"
+      ]
+    },
+    "tp1-linear-on-rep2": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-on-rep2/agent-multiturn-benchmarks.json",
+      "sha256": "ccfdfeffc951e433de21fde04140fdd7f2a9cc90c981ff86a0023ec6c7c60b49",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999401269535869
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9995408434077468
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9994923170023213
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.998678972515881
+        }
+      ],
+      "selected": [
+        "AiterPerTokenFp8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11046.875,
+          "minimum": 2061,
+          "maximum": 20038
+        },
+        "2": {
+          "mean": 11046.1875,
+          "minimum": 2061,
+          "maximum": 20045
+        },
+        "4": {
+          "mean": 11047.46875,
+          "minimum": 2061,
+          "maximum": 20048
+        },
+        "8": {
+          "mean": 11043.375,
+          "minimum": 2060,
+          "maximum": 20044
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "_gemm_a8w8_kernel",
+        "kernel_unified_attention"
+      ]
+    },
+    "tp1-linear-off-rep2": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-off-rep2/agent-multiturn-benchmarks.json",
+      "sha256": "a937c76634992310b0a066a54ef0badc9e85a29ceba9be5dae8e92e590c86632",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999566090307654
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9995230536673505
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.999289851536654
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.9983138695435825
+        }
+      ],
+      "selected": [
+        "RowWiseTorchFP8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11042.125,
+          "minimum": 2061,
+          "maximum": 20026
+        },
+        "2": {
+          "mean": 11054.375,
+          "minimum": 2061,
+          "maximum": 20050
+        },
+        "4": {
+          "mean": 11012.5625,
+          "minimum": 2061,
+          "maximum": 20044
+        },
+        "8": {
+          "mean": 11038.546875,
+          "minimum": 2060,
+          "maximum": 20044
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "kernel_unified_attention"
+      ]
+    },
+    "tp1-linear-off-rep3": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-off-rep3/agent-multiturn-benchmarks.json",
+      "sha256": "3663977d16d01e2b4ba98e394d953419280b57d62aa3e47e034323769f6fdf0b",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999586594111812
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9995185796595938
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9994539681495995
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.998591540106758
+        }
+      ],
+      "selected": [
+        "RowWiseTorchFP8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11042.125,
+          "minimum": 2061,
+          "maximum": 20026
+        },
+        "2": {
+          "mean": 11054.375,
+          "minimum": 2061,
+          "maximum": 20050
+        },
+        "4": {
+          "mean": 11011.25,
+          "minimum": 2061,
+          "maximum": 20042
+        },
+        "8": {
+          "mean": 11038.609375,
+          "minimum": 2060,
+          "maximum": 20044
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "kernel_unified_attention"
+      ]
+    },
+    "tp1-linear-on-rep3": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp1-linear-on-rep3/agent-multiturn-benchmarks.json",
+      "sha256": "259679dc2f80eca5c626bc4992eed31ea4efe34474113b7d6e295d52d01bb499",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999481900726866
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9997180846531704
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9994473843218907
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.998414259075514
+        }
+      ],
+      "selected": [
+        "AiterPerTokenFp8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11050,
+          "minimum": 2061,
+          "maximum": 20043
+        },
+        "2": {
+          "mean": 11050.4375,
+          "minimum": 2061,
+          "maximum": 20047
+        },
+        "4": {
+          "mean": 11044.40625,
+          "minimum": 2061,
+          "maximum": 20046
+        },
+        "8": {
+          "mean": 11047.515625,
+          "minimum": 2060,
+          "maximum": 20047
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "_gemm_a8w8_kernel",
+        "kernel_unified_attention"
+      ]
+    },
+    "tp2-linear-on-rep3": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp2-linear-on-rep3/agent-multiturn-benchmarks.json",
+      "sha256": "a76d0209953d6d9fa0e686701627e4e25f77d14cff6d79316c1fd566f5ef8f8b",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999355689342364
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.99940993997446
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9993167429473857
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.998092778975143
+        }
+      ],
+      "selected": [
+        "AiterPerTokenFp8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11054,
+          "minimum": 2061,
+          "maximum": 20048
+        },
+        "2": {
+          "mean": 11051.25,
+          "minimum": 2061,
+          "maximum": 20047
+        },
+        "4": {
+          "mean": 11052.125,
+          "minimum": 2061,
+          "maximum": 20051
+        },
+        "8": {
+          "mean": 11042.328125,
+          "minimum": 2060,
+          "maximum": 20046
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "_gemm_a8w8_kernel",
+        "kernel_unified_attention"
+      ]
+    },
+    "tp2-linear-off-rep3": {
+      "path": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/results/gfx1201/gemma-4-12b-fp8-dynamic/rocm10-aiter-linear-default-attn-tp1-tp2-20261011-v1/tp2-linear-off-rep3/agent-multiturn-benchmarks.json",
+      "sha256": "8eaa1d79a0117ccbf8cf0bece17704b5e2166d1de192923fc8b3d9ae34b2cd05",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999471324145985
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9994070513747333
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9993037863579404
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.997867206002847
+        }
+      ],
+      "selected": [
+        "RowWiseTorchFP8ScaledMMLinearKernel"
+      ],
+      "prompt_tokens": {
+        "1": {
+          "mean": 11032.5,
+          "minimum": 2061,
+          "maximum": 20016
+        },
+        "2": {
+          "mean": 11055.6875,
+          "minimum": 2061,
+          "maximum": 20050
+        },
+        "4": {
+          "mean": 11030.40625,
+          "minimum": 2061,
+          "maximum": 20049
+        },
+        "8": {
+          "mean": 11049.265625,
+          "minimum": 2060,
+          "maximum": 20047
+        }
+      },
+      "graph_capture_sizes": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "jit_kernel_names": [
+        "kernel_unified_attention"
+      ]
+    }
+  }
+}
