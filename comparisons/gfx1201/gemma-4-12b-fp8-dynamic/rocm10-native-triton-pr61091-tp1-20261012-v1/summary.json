@@ -1,0 +1,556 @@
+{
+  "vllm_commit": "678e155d2b7f1a63702dbed1025879ddd5a88bcc",
+  "successful_requests": 480,
+  "errored_requests": 0,
+  "incomplete_requests": 0,
+  "workload_compatible": true,
+  "method": "Means over all requests.successful, including first-use, warmup and cooldown requests. Geometric mean of two within-GPU candidate/baseline ratios; absolute values are never pooled across GPUs.",
+  "counts": [
+    {
+      "case": "tp1-rowwise-rep1",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999273704200421
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.999421148258668
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9990453614908557
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.9968163763204085
+        }
+      ]
+    },
+    {
+      "case": "tp1-triton-tuned-rep1",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9998952399363579
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9994137105555487
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9989738143215376
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.996770311464269
+        }
+      ]
+    },
+    {
+      "case": "tp1-rowwise-rep2",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999223322272541
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9994035260645753
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.999099870662735
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.9968579471625985
+        }
+      ]
+    },
+    {
+      "case": "tp1-triton-tuned-rep2",
+      "counts": [
+        {
+          "streams": 1,
+          "successful": 8,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 1,
+          "mean_concurrency": 0.9999187521543402
+        },
+        {
+          "streams": 2,
+          "successful": 16,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 2,
+          "mean_concurrency": 1.9996035528281382
+        },
+        {
+          "streams": 4,
+          "successful": 32,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 4,
+          "mean_concurrency": 3.9989779106329375
+        },
+        {
+          "streams": 8,
+          "successful": 64,
+          "errored": 0,
+          "incomplete": 0,
+          "peak_concurrency": 8,
+          "mean_concurrency": 7.996738309644001
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "repeat": 1,
+      "cases": {
+        "rowwise": {
+          "1": {
+            "output_tokens_per_second": 28.089350975363757,
+            "time_to_first_token_ms": 914.903074502945,
+            "request_latency": 18.241675347089767
+          },
+          "2": {
+            "output_tokens_per_second": 26.81688320488762,
+            "time_to_first_token_ms": 1148.9293277263641,
+            "request_latency": 19.103165790438652
+          },
+          "4": {
+            "output_tokens_per_second": 24.79435112869534,
+            "time_to_first_token_ms": 1850.15457123518,
+            "request_latency": 20.69594283401966
+          },
+          "8": {
+            "output_tokens_per_second": 20.879741912717282,
+            "time_to_first_token_ms": 2911.0551811754704,
+            "request_latency": 24.64741000533104
+          }
+        },
+        "triton-tuned": {
+          "1": {
+            "output_tokens_per_second": 32.621587887575906,
+            "time_to_first_token_ms": 1152.998834848404,
+            "request_latency": 15.743275463581085
+          },
+          "2": {
+            "output_tokens_per_second": 31.40535552819448,
+            "time_to_first_token_ms": 1139.1298472881317,
+            "request_latency": 16.316639587283134
+          },
+          "4": {
+            "output_tokens_per_second": 28.796421245862987,
+            "time_to_first_token_ms": 1799.5893880724907,
+            "request_latency": 17.835797645151615
+          },
+          "8": {
+            "output_tokens_per_second": 23.907862354508357,
+            "time_to_first_token_ms": 2822.8776529431343,
+            "request_latency": 21.56195829436183
+          }
+        }
+      },
+      "mean_prompt_tokens_by_turn": {
+        "rowwise": {
+          "1": {
+            "1": 2061,
+            "2": 4628,
+            "3": 7194,
+            "4": 9764,
+            "5": 12331,
+            "6": 14900,
+            "7": 17470,
+            "8": 20040
+          },
+          "2": {
+            "1": 2061,
+            "2": 4627.5,
+            "3": 7196,
+            "4": 9764.5,
+            "5": 12331.5,
+            "6": 14901,
+            "7": 17468.5,
+            "8": 20038.5
+          },
+          "4": {
+            "1": 2061,
+            "2": 4628.25,
+            "3": 7196.25,
+            "4": 9765.5,
+            "5": 12334.25,
+            "6": 14903.5,
+            "7": 17473.25,
+            "8": 20043
+          },
+          "8": {
+            "1": 2060.875,
+            "2": 4627.25,
+            "3": 7195.625,
+            "4": 9763.5,
+            "5": 12331.625,
+            "6": 14901.125,
+            "7": 17470.25,
+            "8": 20039.5
+          }
+        },
+        "triton-tuned": {
+          "1": {
+            "1": 2061,
+            "2": 4628,
+            "3": 7183,
+            "4": 9750,
+            "5": 12320,
+            "6": 14884,
+            "7": 17454,
+            "8": 20024
+          },
+          "2": {
+            "1": 2061,
+            "2": 4622.5,
+            "3": 7190.5,
+            "4": 9758.5,
+            "5": 12326.5,
+            "6": 14894.5,
+            "7": 17462.5,
+            "8": 20030.5
+          },
+          "4": {
+            "1": 2061,
+            "2": 4627.75,
+            "3": 7197.75,
+            "4": 9767,
+            "5": 12337,
+            "6": 14907,
+            "7": 17476,
+            "8": 20045.75
+          },
+          "8": {
+            "1": 2060.875,
+            "2": 4627.125,
+            "3": 7194.375,
+            "4": 9762.625,
+            "5": 12308.375,
+            "6": 14877.375,
+            "7": 17446.25,
+            "8": 20014.625
+          }
+        }
+      },
+      "changes_percent": {
+        "1": {
+          "output_tokens_per_second": 16.135071672489776,
+          "time_to_first_token_ms": 26.02415129873876,
+          "request_latency": -13.69610979238961
+        },
+        "2": {
+          "output_tokens_per_second": 17.11038634971036,
+          "time_to_first_token_ms": -0.8529228214258167,
+          "request_latency": -14.586724701673292
+        },
+        "4": {
+          "output_tokens_per_second": 16.14105606714553,
+          "time_to_first_token_ms": -2.733024794189576,
+          "request_latency": -13.819835181253904
+        },
+        "8": {
+          "output_tokens_per_second": 14.502671797617994,
+          "time_to_first_token_ms": -3.029057257400747,
+          "request_latency": -12.518360794508842
+        }
+      },
+      "prompt_length_difference_percent_max": 0.18853962879993302
+    },
+    {
+      "repeat": 2,
+      "cases": {
+        "rowwise": {
+          "1": {
+            "output_tokens_per_second": 28.088789993973403,
+            "time_to_first_token_ms": 924.7346222400665,
+            "request_latency": 18.24233290553093
+          },
+          "2": {
+            "output_tokens_per_second": 26.643795729611142,
+            "time_to_first_token_ms": 1170.6851571798325,
+            "request_latency": 19.22722004354
+          },
+          "4": {
+            "output_tokens_per_second": 24.57300168641804,
+            "time_to_first_token_ms": 1776.066243648529,
+            "request_latency": 20.88448692113161
+          },
+          "8": {
+            "output_tokens_per_second": 20.64812706296984,
+            "time_to_first_token_ms": 3010.520290583372,
+            "request_latency": 24.930155642330647
+          }
+        },
+        "triton-tuned": {
+          "1": {
+            "output_tokens_per_second": 32.69535428597541,
+            "time_to_first_token_ms": 1134.7238719463348,
+            "request_latency": 15.709824055433273
+          },
+          "2": {
+            "output_tokens_per_second": 31.383440423310383,
+            "time_to_first_token_ms": 1122.8608340024948,
+            "request_latency": 16.327980622649193
+          },
+          "4": {
+            "output_tokens_per_second": 28.593133400382857,
+            "time_to_first_token_ms": 1672.8811040520668,
+            "request_latency": 17.97460713982582
+          },
+          "8": {
+            "output_tokens_per_second": 23.600588750117065,
+            "time_to_first_token_ms": 2871.7475160956383,
+            "request_latency": 21.88237376883626
+          }
+        }
+      },
+      "mean_prompt_tokens_by_turn": {
+        "rowwise": {
+          "1": {
+            "1": 2061,
+            "2": 4628,
+            "3": 7194,
+            "4": 9764,
+            "5": 12331,
+            "6": 14900,
+            "7": 17470,
+            "8": 20040
+          },
+          "2": {
+            "1": 2061,
+            "2": 4627.5,
+            "3": 7196,
+            "4": 9764.5,
+            "5": 12333,
+            "6": 14902.5,
+            "7": 17470,
+            "8": 20040
+          },
+          "4": {
+            "1": 2061,
+            "2": 4628.25,
+            "3": 7197.25,
+            "4": 9767.25,
+            "5": 12337.25,
+            "6": 14907.25,
+            "7": 17475.25,
+            "8": 20044.75
+          },
+          "8": {
+            "1": 2060.875,
+            "2": 4627.25,
+            "3": 7195.625,
+            "4": 9763.5,
+            "5": 12331.625,
+            "6": 14901.125,
+            "7": 17470.625,
+            "8": 20040.375
+          }
+        },
+        "triton-tuned": {
+          "1": {
+            "1": 2061,
+            "2": 4628,
+            "3": 7183,
+            "4": 9750,
+            "5": 12320,
+            "6": 14884,
+            "7": 17454,
+            "8": 20024
+          },
+          "2": {
+            "1": 2061,
+            "2": 4622.5,
+            "3": 7190.5,
+            "4": 9758.5,
+            "5": 12326.5,
+            "6": 14894.5,
+            "7": 17462,
+            "8": 20032
+          },
+          "4": {
+            "1": 2061,
+            "2": 4627.75,
+            "3": 7197,
+            "4": 9766.25,
+            "5": 12336.25,
+            "6": 14906.25,
+            "7": 17476,
+            "8": 20045.5
+          },
+          "8": {
+            "1": 2060.875,
+            "2": 4627.125,
+            "3": 7194.375,
+            "4": 9762.625,
+            "5": 12308.375,
+            "6": 14876.75,
+            "7": 17445.25,
+            "8": 20013.875
+          }
+        }
+      },
+      "changes_percent": {
+        "1": {
+          "output_tokens_per_second": 16.400009729825914,
+          "time_to_first_token_ms": 22.70805533349587,
+          "request_latency": -13.88259310479867
+        },
+        "2": {
+          "output_tokens_per_second": 17.788924452801357,
+          "time_to_first_token_ms": -4.085156703664539,
+          "request_latency": -15.078827902970303
+        },
+        "4": {
+          "output_tokens_per_second": 16.359953762534516,
+          "time_to_first_token_ms": -5.8097573761940025,
+          "request_latency": -13.933211729331397
+        },
+        "8": {
+          "output_tokens_per_second": 14.298932189555046,
+          "time_to_first_token_ms": -4.6095943920990035,
+          "request_latency": -12.225282173206109
+        }
+      },
+      "prompt_length_difference_percent_max": 0.18853962879993302
+    }
+  ],
+  "paired_changes_percent": {
+    "1": {
+      "output_tokens_per_second": 16.267465237063796,
+      "time_to_first_token_ms": 24.355050283140866,
+      "request_latency": -13.78940187165173
+    },
+    "2": {
+      "output_tokens_per_second": 17.44916538819854,
+      "time_to_first_token_ms": -2.482430450340789,
+      "request_latency": -14.833131729643966
+    },
+    "4": {
+      "output_tokens_per_second": 16.250453392255572,
+      "time_to_first_token_ms": -4.283752717111778,
+      "request_latency": -13.876542111998635
+    },
+    "8": {
+      "output_tokens_per_second": 14.400756637877254,
+      "time_to_first_token_ms": -3.8225725006273303,
+      "request_latency": -12.371944011707203
+    }
+  },
+  "paired_change_ranges_percent": {
+    "1": {
+      "output_tokens_per_second": [
+        16.135071672489776,
+        16.400009729825914
+      ],
+      "time_to_first_token_ms": [
+        22.70805533349587,
+        26.02415129873876
+      ],
+      "request_latency": [
+        -13.88259310479867,
+        -13.69610979238961
+      ]
+    },
+    "2": {
+      "output_tokens_per_second": [
+        17.11038634971036,
+        17.788924452801357
+      ],
+      "time_to_first_token_ms": [
+        -4.085156703664539,
+        -0.8529228214258167
+      ],
+      "request_latency": [
+        -15.078827902970303,
+        -14.586724701673292
+      ]
+    },
+    "4": {
+      "output_tokens_per_second": [
+        16.14105606714553,
+        16.359953762534516
+      ],
+      "time_to_first_token_ms": [
+        -5.8097573761940025,
+        -2.733024794189576
+      ],
+      "request_latency": [
+        -13.933211729331397,
+        -13.819835181253904
+      ]
+    },
+    "8": {
+      "output_tokens_per_second": [
+        14.298932189555046,
+        14.502671797617994
+      ],
+      "time_to_first_token_ms": [
+        -4.6095943920990035,
+        -3.029057257400747
+      ],
+      "request_latency": [
+        -12.518360794508842,
+        -12.225282173206109
+      ]
+    }
+  }
+}

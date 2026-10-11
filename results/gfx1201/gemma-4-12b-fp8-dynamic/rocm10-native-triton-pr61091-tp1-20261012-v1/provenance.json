@@ -1,0 +1,52 @@
+{
+  "vllm_pr": "https://github.com/vllm-project/vllm/pull/61091",
+  "vllm_commit": "678e155d2b7f1a63702dbed1025879ddd5a88bcc",
+  "model": "RedHatAI/gemma-4-12B-it-FP8-Dynamic",
+  "resolved_default_model_revision": "2083adceb2a3df0465e6021e08a7196d21dbbb44",
+  "revision_arguments": false,
+  "method": "Fresh server and empty compile caches for each backend. Two independent same-GPU pairs in reversed order; compare within-GPU ratios and retain absolute metrics per GPU. Direct vllm serve CLI, no revision arguments. Default compilation/graphs and prefix caching; AITER attention enabled, AITER linear disabled; only the linear backend changes.",
+  "pairs": [
+    {
+      "repeat": 1,
+      "physical_gpu": "0",
+      "started": "2026-10-11T16:46:53.813909+00:00",
+      "plan": [
+        {
+          "tp": 1,
+          "arm": "rowwise",
+          "repeat": 1
+        },
+        {
+          "tp": 1,
+          "arm": "triton-tuned",
+          "repeat": 1
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "physical_gpu": "1",
+      "started": "2026-10-11T16:46:53.957308+00:00",
+      "plan": [
+        {
+          "tp": 1,
+          "arm": "triton-tuned",
+          "repeat": 2
+        },
+        {
+          "tp": 1,
+          "arm": "rowwise",
+          "repeat": 2
+        }
+      ]
+    }
+  ],
+  "tracked_vllm_sources_verified": 3256,
+  "source_immutability_verified": true,
+  "report_sha256": {
+    "tp1-rowwise-rep1": "1b66ce23106354b649b634164ee72d8eaa8e1d07054041b3f0dc15591d38515f",
+    "tp1-triton-tuned-rep1": "7411313852151c0395007f476a3701df632179a13d803602a6efe8ec83742977",
+    "tp1-rowwise-rep2": "6a1814864f957c201d681cca1c358e59f34c80d0d7d2e991a8423a4c11f892f7",
+    "tp1-triton-tuned-rep2": "560cb705e70936ef92a55d9a67d995bff82564d62b5c3a163ea5e48fcb2166de"
+  }
+}

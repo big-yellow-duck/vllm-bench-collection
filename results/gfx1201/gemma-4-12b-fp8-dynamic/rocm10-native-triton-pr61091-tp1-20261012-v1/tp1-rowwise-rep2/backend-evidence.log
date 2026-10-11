@@ -1,0 +1,4 @@
+(EngineCore pid=2904189) INFO 10-12 01:01:16 [model_executor/.../linear/__init__.py:770] Selected RowWiseTorchFP8ScaledMMLinearKernel for CompressedTensorsW8A8Fp8
+(EngineCore pid=2904189) INFO 10-12 01:01:16 [platforms/rocm.py:745] Using ROCM_AITER_UNIFIED_ATTN backend (selected via --attention-backend).
+Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:24<00:00, 12.33s/it]
+Capturing CUDA graphs (FULL): 100%|██████████| 4/4 [00:12<00:00,  3.11s/it]

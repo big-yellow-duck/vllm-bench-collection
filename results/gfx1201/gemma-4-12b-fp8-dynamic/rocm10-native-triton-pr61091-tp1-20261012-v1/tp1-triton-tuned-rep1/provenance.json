@@ -1,0 +1,116 @@
+{
+  "case": {
+    "tp": 1,
+    "arm": "triton-tuned",
+    "repeat": 1
+  },
+  "vllm_commit": "678e155d2b7f1a63702dbed1025879ddd5a88bcc",
+  "model": "RedHatAI/gemma-4-12B-it-FP8-Dynamic",
+  "resolved_default_model_revision": "2083adceb2a3df0465e6021e08a7196d21dbbb44",
+  "revision_arguments": false,
+  "physical_gpu": "0",
+  "runtime": {
+    "torch": "2.13.0+rocm10.0.0",
+    "hip": "7.15.26333",
+    "triton": "3.8.0",
+    "device": "AMD Radeon AI PRO R9700",
+    "architecture": "gfx1201"
+  },
+  "portable_command": [
+    "vllm",
+    "serve",
+    "RedHatAI/gemma-4-12B-it-FP8-Dynamic",
+    "--language-model-only",
+    "--dtype",
+    "bfloat16",
+    "--max-num-seqs",
+    "8",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--tensor-parallel-size",
+    "1",
+    "--max-num-batched-tokens",
+    "8192",
+    "--max-model-len",
+    "32768",
+    "--kv-cache-dtype",
+    "fp8",
+    "--load-format",
+    "safetensors",
+    "--attention-backend",
+    "ROCM_AITER_UNIFIED_ATTN",
+    "--linear-backend",
+    "triton"
+  ],
+  "env": {
+    "VLLM_ROCM_USE_AITER": "1",
+    "VLLM_ROCM_USE_AITER_LINEAR": "0",
+    "VLLM_ROCM_USE_AITER_UNIFIED_ATTENTION": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "client_env": {
+    "GUIDELLM__MP_MAX_PENDING_BUFFER_PERCENT": "2.0",
+    "GUIDELLM__MAX_WORKER_PROCESSES": "1"
+  },
+  "counts": [
+    {
+      "streams": 1,
+      "successful": 8,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 1,
+      "mean_concurrency": 0.9998952399363579
+    },
+    {
+      "streams": 2,
+      "successful": 16,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 2,
+      "mean_concurrency": 1.9994137105555487
+    },
+    {
+      "streams": 4,
+      "successful": 32,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 4,
+      "mean_concurrency": 3.9989738143215376
+    },
+    {
+      "streams": 8,
+      "successful": 64,
+      "errored": 0,
+      "incomplete": 0,
+      "peak_concurrency": 8,
+      "mean_concurrency": 7.996770311464269
+    }
+  ],
+  "selected_linear_kernels": [
+    "TritonFp8PerTokenScaledMMKernel"
+  ],
+  "tuning_configs_loaded": [
+    "N=30720,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json",
+    "N=3840,K=15360,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json",
+    "N=3840,K=4096,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json",
+    "N=3840,K=8192,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json",
+    "N=8192,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json",
+    "N=9216,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json"
+  ],
+  "config_sha256": {
+    "N=15360,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "bf5e587ee7158a3cd46cde266b24b2926ebb842975ab5d1f34afc6298b73b792",
+    "N=30720,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "a36f92631957f11943973a29d0e15efba56ce1d0b956eea879923035f7866749",
+    "N=3840,K=15360,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "588e2da09a098135c5e71d84cda0bb37e2122368cc977c671d081aba7f023575",
+    "N=3840,K=2048,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "f5709255ddd63abd772b75e64a1ea0fa3467d6089d929a7dab2fcd2d834ebe80",
+    "N=3840,K=4096,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "be1fc84e7db491cb1520f5f3d61653b66f179a0b3c407e886baf3fd2e360327a",
+    "N=3840,K=7680,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "d6e89a7278688ec11ae6be41305704f60fccb1eb7822caaca9aa6bb19c4f8069",
+    "N=3840,K=8192,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "b86e5b2356a8f87c610f018b68b8f66789248a698a6f363db5bfea4329da398f",
+    "N=4096,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "270d0c2969855e0cd4e478d8273e8b2a71538e184419bbbfe0b66f3ba97a6509",
+    "N=5120,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "143715331fa8bb14af39653a412e5233bc9a2006724666c43005866fd34e7bb9",
+    "N=8192,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "7fde9cb91343ed03c1210ad1355d65d846d597c335efe1d454ac389a21395bba",
+    "N=9216,K=3840,device_name=AMD_Radeon_R9700,dtype=fp8_w8a8_per_token,input_dtype=float8_e4m3fn,out_dtype=bfloat16.json": "d6c7a7d7d35a93c3d92c94a126b25310839052694a8628e161978e92393d5c38"
+  },
+  "source_immutability_verified": true,
+  "report_sha256": "7411313852151c0395007f476a3701df632179a13d803602a6efe8ec83742977"
+}
