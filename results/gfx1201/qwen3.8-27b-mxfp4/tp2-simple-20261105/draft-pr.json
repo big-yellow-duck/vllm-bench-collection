@@ -1,0 +1,9 @@
+{
+  "number": 1374,
+  "html_url": "https://github.com/ROCm/FlyDSL/pull/1374",
+  "state": "open",
+  "draft": true,
+  "head_sha": "6ca2e6eeaadb29449dad4f960fac90208c7b1158",
+  "head": "big-yellow-duck:rdna4-mxfp4-upstream",
+  "base": "ROCm:main"
+}

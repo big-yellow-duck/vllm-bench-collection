@@ -1,0 +1,6 @@
+{
+  "expected_api": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+  "serving_python_prefix": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.cache/mxfp4-serving/.venv",
+  "startup_executable_events": 84,
+  "all_match": true
+}

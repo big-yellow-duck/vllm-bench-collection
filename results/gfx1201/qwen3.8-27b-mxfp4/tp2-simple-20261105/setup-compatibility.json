@@ -1,0 +1,19 @@
+{
+  "matched_fields": [
+    "model",
+    "tensor_parallel_size",
+    "source_head",
+    "source_diff_sha256",
+    "hook_sha256",
+    "driver_sha256",
+    "benchmark_environment",
+    "requested_passes",
+    "streams",
+    "profile_ms"
+  ],
+  "nccl_proto": "Simple",
+  "kernel_sources_match": true,
+  "baseline_activation": "checkpoint",
+  "candidate_activation": "fp8",
+  "scope": "Same workload and vLLM source; activation precision intentionally differs."
+}

@@ -1,0 +1,46 @@
+{
+  "case": "default",
+  "gpu": [
+    0,
+    1
+  ],
+  "port": 8000,
+  "started": 1793888158.589311,
+  "phase": "complete",
+  "updated": 1793892921.9547517,
+  "server_pid": 3747713,
+  "pass_number": 2,
+  "pass_started": 1793890557.3621747,
+  "completed_run": {
+    "pass_number": 1,
+    "phase": "complete",
+    "started": 1793888223.0934572,
+    "finished": 1793890556.9246385,
+    "executable_events": 0,
+    "stalls_50ms": 0,
+    "executable_seconds": 0,
+    "maximum_executable_seconds": 0
+  },
+  "runs": [
+    {
+      "pass_number": 1,
+      "phase": "complete",
+      "started": 1793888223.0934572,
+      "finished": 1793890556.9246385,
+      "executable_events": 0,
+      "stalls_50ms": 0,
+      "executable_seconds": 0,
+      "maximum_executable_seconds": 0
+    },
+    {
+      "pass_number": 2,
+      "phase": "complete",
+      "started": 1793890557.3621747,
+      "finished": 1793892921.73576,
+      "executable_events": 0,
+      "stalls_50ms": 0,
+      "executable_seconds": 0,
+      "maximum_executable_seconds": 0
+    }
+  ]
+}

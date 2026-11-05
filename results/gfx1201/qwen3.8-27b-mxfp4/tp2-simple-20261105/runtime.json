@@ -1,0 +1,13 @@
+{
+  "versions": {
+    "flydsl": "0.3.4.1",
+    "torch": "2.13.0+rocm10.0.0",
+    "vllm": "0.1.dev22580+g19c5e8318.rocm100",
+    "guidellm": "0.7.3"
+  },
+  "platform": "Linux-6.18.16-200.fc43.x86_64-x86_64-with-glibc2.42",
+  "flydsl_kernel_source": "ce625eb6be6d521eab3b0226703c6a03346d470d",
+  "pr_head": "6ca2e6eeaadb29449dad4f960fac90208c7b1158",
+  "vllm_source": "6973ab622cfd7a78e05101397692c33eae4ff0c8",
+  "scope": "Installed compiler/runtime fixed across both cases; PR Python kernel files equal validated snapshot. No compiler rebuild during benchmark."
+}

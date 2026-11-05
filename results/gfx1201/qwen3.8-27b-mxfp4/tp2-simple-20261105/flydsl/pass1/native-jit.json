@@ -1,0 +1,870 @@
+[
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.2655811,
+    "end": 1793892985.2905319,
+    "seconds": 0.024949895218014717
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.2653012,
+    "end": 1793892985.2906737,
+    "seconds": 0.025370846036821604
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      48,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.2910125,
+    "end": 1793892985.3108265,
+    "seconds": 0.01981314830482006
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      48,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.2911482,
+    "end": 1793892985.3108525,
+    "seconds": 0.019703753292560577
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.3129659,
+    "end": 1793892985.331407,
+    "seconds": 0.018440856132656336
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.3130796,
+    "end": 1793892985.3316598,
+    "seconds": 0.01857920316979289
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.3320255,
+    "end": 1793892985.3508701,
+    "seconds": 0.018843963276594877
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.3323138,
+    "end": 1793892985.3508825,
+    "seconds": 0.018567644990980625
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.3512614,
+    "end": 1793892985.3688657,
+    "seconds": 0.01760396407917142
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.351301,
+    "end": 1793892985.369058,
+    "seconds": 0.01775623532012105
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.3734622,
+    "end": 1793892985.3911083,
+    "seconds": 0.01764567894861102
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      1568,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.3734436,
+    "end": 1793892985.3913076,
+    "seconds": 0.017863184679299593
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      492,
+      48,
+      5120
+    ],
+    "engine": "register",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.4767537,
+    "end": 1793892985.4944656,
+    "seconds": 0.01771148480474949
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      492,
+      48,
+      5120
+    ],
+    "engine": "register",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892985.4784365,
+    "end": 1793892985.4958758,
+    "seconds": 0.017438814043998718
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.0750828,
+    "end": 1793892997.0960932,
+    "seconds": 0.021009436808526516
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.0779688,
+    "end": 1793892997.0973632,
+    "seconds": 0.019393575843423605
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      48,
+      5120
+    ],
+    "engine": "register",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.0963674,
+    "end": 1793892997.1140437,
+    "seconds": 0.017675878014415503
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      48,
+      5120
+    ],
+    "engine": "register",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.0977328,
+    "end": 1793892997.1154668,
+    "seconds": 0.017733423970639706
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.1153913,
+    "end": 1793892997.1318521,
+    "seconds": 0.016460232436656952
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.116781,
+    "end": 1793892997.1331794,
+    "seconds": 0.01639750599861145
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.132178,
+    "end": 1793892997.1481304,
+    "seconds": 0.01595174800604582
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.1335146,
+    "end": 1793892997.1497002,
+    "seconds": 0.016184838954359293
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.1484172,
+    "end": 1793892997.165749,
+    "seconds": 0.01733141578733921
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.1499991,
+    "end": 1793892997.1671793,
+    "seconds": 0.017179351300001144
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.169072,
+    "end": 1793892997.1859019,
+    "seconds": 0.01682939473539591
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      784,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.1707563,
+    "end": 1793892997.1878183,
+    "seconds": 0.01706133084371686
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.400546,
+    "end": 1793892997.417133,
+    "seconds": 0.01658654399216175
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.4004834,
+    "end": 1793892997.417509,
+    "seconds": 0.01702497387304902
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.41839,
+    "end": 1793892997.4349422,
+    "seconds": 0.0165519448928535
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.4188197,
+    "end": 1793892997.4356902,
+    "seconds": 0.016870064195245504
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.4352858,
+    "end": 1793892997.451746,
+    "seconds": 0.016459866892546415
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.4360569,
+    "end": 1793892997.4529815,
+    "seconds": 0.0169239928945899
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.452007,
+    "end": 1793892997.468806,
+    "seconds": 0.016798584256321192
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.4532337,
+    "end": 1793892997.4702203,
+    "seconds": 0.01698602642863989
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.4720247,
+    "end": 1793892997.4885814,
+    "seconds": 0.016556065995246172
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      650,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793892997.473492,
+    "end": 1793892997.4903514,
+    "seconds": 0.01685862010344863
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      253,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893026.224136,
+    "end": 1793893026.2429032,
+    "seconds": 0.018766234163194895
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      253,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893026.2242017,
+    "end": 1793893026.2429156,
+    "seconds": 0.018712924793362617
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      253,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893026.2452319,
+    "end": 1793893026.2627835,
+    "seconds": 0.01755104260519147
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      253,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893026.2452724,
+    "end": 1793893026.262793,
+    "seconds": 0.017519963905215263
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      253,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893026.2630405,
+    "end": 1793893026.2795422,
+    "seconds": 0.016501208301633596
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      253,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893026.2630594,
+    "end": 1793893026.2797694,
+    "seconds": 0.01670928206294775
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9142172,
+    "end": 1793893042.9332173,
+    "seconds": 0.018999129068106413
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.914173,
+    "end": 1793893042.9332228,
+    "seconds": 0.019047396257519722
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9346652,
+    "end": 1793893042.952295,
+    "seconds": 0.01762940501794219
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9346757,
+    "end": 1793893042.9523783,
+    "seconds": 0.01770183816552162
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9526198,
+    "end": 1793893042.9687598,
+    "seconds": 0.016139740124344826
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9527175,
+    "end": 1793893042.9691174,
+    "seconds": 0.016399377025663853
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9690247,
+    "end": 1793893042.9861052,
+    "seconds": 0.017079969868063927
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9693983,
+    "end": 1793893042.986535,
+    "seconds": 0.0171361924149096
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.989374,
+    "end": 1793893043.0054128,
+    "seconds": 0.016038321889936924
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      374,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893042.9899557,
+    "end": 1793893043.006185,
+    "seconds": 0.016228563152253628
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.0277176,
+    "end": 1793893156.0483212,
+    "seconds": 0.020602910313755274
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      8192,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.027755,
+    "end": 1793893156.0483303,
+    "seconds": 0.020574273075908422
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.0498528,
+    "end": 1793893156.0671487,
+    "seconds": 0.017295064870268106
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      5120,
+      3072
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.0498943,
+    "end": 1793893156.067421,
+    "seconds": 0.017525548115372658
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.067485,
+    "end": 1793893156.0834718,
+    "seconds": 0.015986408106982708
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      17408,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.0677836,
+    "end": 1793893156.0836794,
+    "seconds": 0.015895382035523653
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.0837526,
+    "end": 1793893156.100093,
+    "seconds": 0.016339878551661968
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      5120,
+      8704
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.0839806,
+    "end": 1793893156.1006167,
+    "seconds": 0.016635557636618614
+  },
+  {
+    "pid": 3784195,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.1036026,
+    "end": 1793893156.118827,
+    "seconds": 0.015223868191242218
+  },
+  {
+    "pid": 3784196,
+    "visible_gpu": "0,1",
+    "shape": [
+      37,
+      7168,
+      5120
+    ],
+    "engine": "hybrid",
+    "package_file": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4/entrypoint.py",
+    "start": 1793893156.1041656,
+    "end": 1793893156.1197028,
+    "seconds": 0.015536439139395952
+  }
+]

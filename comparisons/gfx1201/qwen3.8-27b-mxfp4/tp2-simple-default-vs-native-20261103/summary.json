@@ -1,0 +1,517 @@
+{
+  "selected_pass": 2,
+  "reports": [
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-default/pass2/agent-multiturn-benchmarks.json",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-flydsl/pass2/agent-multiturn-benchmarks.json"
+  ],
+  "compatibility_audit_passed": true,
+  "activation_match": false,
+  "activation_scope": "Checkpoint-default W4A4 emulation versus FlyDSL W4A8; end-to-end serving comparison, not precision-matched kernel isolation.",
+  "performance": {
+    "1": {
+      "output_tokens_per_second": {
+        "baseline": 7.89586307410784,
+        "candidate": 30.691160833942703,
+        "change_percent": 288.69925359502923
+      },
+      "time_to_first_token_ms": {
+        "baseline": 1963.9824032783508,
+        "candidate": 1387.8479897975922,
+        "change_percent": -29.3350089348588
+      },
+      "request_latency": {
+        "baseline": 65.54108500480652,
+        "candidate": 17.534027189016342,
+        "change_percent": -73.24727354188528
+      }
+    },
+    "2": {
+      "output_tokens_per_second": {
+        "baseline": 7.230552269526128,
+        "candidate": 28.087801117596044,
+        "change_percent": 288.4599691779401
+      },
+      "time_to_first_token_ms": {
+        "baseline": 3296.604812145233,
+        "candidate": 2464.023858308792,
+        "change_percent": -25.255710079930605
+      },
+      "request_latency": {
+        "baseline": 71.06644350290298,
+        "candidate": 19.237715631723404,
+        "change_percent": -72.92995866475636
+      }
+    },
+    "4": {
+      "output_tokens_per_second": {
+        "baseline": 6.894011961515426,
+        "candidate": 23.878042986704372,
+        "change_percent": 246.35917546994733
+      },
+      "time_to_first_token_ms": {
+        "baseline": 4393.819943070412,
+        "candidate": 3862.9590421915054,
+        "change_percent": -12.081990335451465
+      },
+      "request_latency": {
+        "baseline": 74.61956617981195,
+        "candidate": 22.778741918504238,
+        "change_percent": -69.47349993483755
+      }
+    },
+    "8": {
+      "output_tokens_per_second": {
+        "baseline": 6.22330063109595,
+        "candidate": 18.480035711957363,
+        "change_percent": 196.9491079961366
+      },
+      "time_to_first_token_ms": {
+        "baseline": 5270.697098225355,
+        "candidate": 5519.534636288881,
+        "change_percent": 4.721150417604347
+      },
+      "request_latency": {
+        "baseline": 82.84705713763833,
+        "candidate": 29.54734966903925,
+        "change_percent": -64.33506428604865
+      }
+    }
+  },
+  "audits": [
+    {
+      "case": "default",
+      "passes": [
+        {
+          "pass_number": 1,
+          "requests": [
+            {
+              "streams": 1,
+              "successful": 8,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10629.625
+            },
+            {
+              "streams": 2,
+              "successful": 16,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10614.75
+            },
+            {
+              "streams": 4,
+              "successful": 32,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10722.875
+            },
+            {
+              "streams": 8,
+              "successful": 64,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10862.25
+            }
+          ],
+          "preemptions": 0.0,
+          "native_inference_jit_warnings": 0
+        },
+        {
+          "pass_number": 2,
+          "requests": [
+            {
+              "streams": 1,
+              "successful": 8,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10629.625
+            },
+            {
+              "streams": 2,
+              "successful": 16,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10614.75
+            },
+            {
+              "streams": 4,
+              "successful": 32,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10722.875
+            },
+            {
+              "streams": 8,
+              "successful": 64,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10864.796875
+            }
+          ],
+          "preemptions": 0.0,
+          "native_inference_jit_warnings": 0
+        }
+      ],
+      "runs": [
+        {
+          "pass_number": 1,
+          "phase": "complete",
+          "started": 1793888223.0934572,
+          "finished": 1793890556.9246385,
+          "executable_events": 0,
+          "stalls_50ms": 0,
+          "executable_seconds": 0,
+          "maximum_executable_seconds": 0
+        },
+        {
+          "pass_number": 2,
+          "phase": "complete",
+          "started": 1793890557.3621747,
+          "finished": 1793892921.73576,
+          "executable_events": 0,
+          "stalls_50ms": 0,
+          "executable_seconds": 0,
+          "maximum_executable_seconds": 0
+        }
+      ],
+      "nccl_simple_ranks": [
+        0,
+        1
+      ],
+      "graphs_enabled": true,
+      "native_host_event_audit": [
+        {
+          "pass_number": 1,
+          "slow_events": 0,
+          "slow_events_with_new_shape_engine": 0,
+          "new_slow_m_values": []
+        },
+        {
+          "pass_number": 2,
+          "slow_events": 0,
+          "slow_events_with_new_shape_engine": 0,
+          "new_slow_m_values": []
+        }
+      ]
+    },
+    {
+      "case": "flydsl",
+      "passes": [
+        {
+          "pass_number": 1,
+          "requests": [
+            {
+              "streams": 1,
+              "successful": 8,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10822.875
+            },
+            {
+              "streams": 2,
+              "successful": 16,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10665.25
+            },
+            {
+              "streams": 4,
+              "successful": 32,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10757.5625
+            },
+            {
+              "streams": 8,
+              "successful": 64,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10725.265625
+            }
+          ],
+          "preemptions": 0.0,
+          "native_inference_jit_warnings": 0
+        },
+        {
+          "pass_number": 2,
+          "requests": [
+            {
+              "streams": 1,
+              "successful": 8,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10822.875
+            },
+            {
+              "streams": 2,
+              "successful": 16,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10665.25
+            },
+            {
+              "streams": 4,
+              "successful": 32,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10728.4375
+            },
+            {
+              "streams": 8,
+              "successful": 64,
+              "errors": 0,
+              "incomplete": 0,
+              "mean_prompt_tokens": 10725.265625
+            }
+          ],
+          "preemptions": 0.0,
+          "native_inference_jit_warnings": 0
+        }
+      ],
+      "runs": [
+        {
+          "pass_number": 1,
+          "phase": "complete",
+          "started": 1793892980.6440582,
+          "finished": 1793893710.3359725,
+          "executable_events": 62,
+          "stalls_50ms": 0,
+          "executable_seconds": 1.0968894073739648,
+          "maximum_executable_seconds": 0.025370846036821604
+        },
+        {
+          "pass_number": 2,
+          "phase": "complete",
+          "started": 1793893710.7790687,
+          "finished": 1793894434.352452,
+          "executable_events": 0,
+          "stalls_50ms": 0,
+          "executable_seconds": 0,
+          "maximum_executable_seconds": 0
+        }
+      ],
+      "nccl_simple_ranks": [
+        0,
+        1
+      ],
+      "graphs_enabled": true,
+      "native_host_event_audit": [
+        {
+          "pass_number": 1,
+          "slow_events": 0,
+          "slow_events_with_new_shape_engine": 0,
+          "new_slow_m_values": []
+        },
+        {
+          "pass_number": 2,
+          "slow_events": 0,
+          "slow_events_with_new_shape_engine": 0,
+          "new_slow_m_values": []
+        }
+      ]
+    }
+  ],
+  "setups": [
+    {
+      "case": "default",
+      "model": {
+        "phase": "complete",
+        "repo": "amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+        "revision": "5233554c5fa56afda40150556b95573c2d7d29c0",
+        "path": "/home/ellm/.cache/huggingface/hub/models--amd--Qwen3.8-27B-Quark-AWQ-MXFP4/snapshots/5233554c5fa56afda40150556b95573c2d7d29c0",
+        "completed": 1793468293.623125
+      },
+      "gpu": [
+        0,
+        1
+      ],
+      "port": 8000,
+      "tensor_parallel_size": 2,
+      "activation": "checkpoint",
+      "kernel_package": null,
+      "kernel_source_sha256": null,
+      "streams": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "requested_passes": 2,
+      "profile_ms": [],
+      "server_command": [
+        "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.cache/mxfp4-serving/.venv/bin/python",
+        "-m",
+        "vllm.entrypoints.cli.main",
+        "serve",
+        "/home/ellm/.cache/huggingface/hub/models--amd--Qwen3.8-27B-Quark-AWQ-MXFP4/snapshots/5233554c5fa56afda40150556b95573c2d7d29c0",
+        "--served-model-name",
+        "amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000",
+        "--tensor-parallel-size",
+        "2",
+        "--dtype",
+        "bfloat16",
+        "--language-model-only",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "16",
+        "--max-num-batched-tokens",
+        "2048",
+        "--gpu-memory-utilization",
+        "0.98",
+        "--enable-prefix-caching",
+        "--disable-custom-all-reduce",
+        "--compilation-config",
+        "{\"cudagraph_capture_sizes\": [1, 2, 4, 8, 16]}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\": false}",
+        "--generation-config",
+        "vllm",
+        "--override-generation-config",
+        "{\"temperature\": 0}",
+        "--seed",
+        "42",
+        "--disable-uvicorn-access-log",
+        "--jit-monitor-verbose"
+      ],
+      "server_environment": {
+        "ROCR_VISIBLE_DEVICES": "0,1",
+        "NCCL_PROTO": "Simple",
+        "NCCL_DEBUG": "INFO",
+        "VLLM_SERVER_DEV_MODE": "1",
+        "MXFP4_JIT_LOG": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-default/native-jit.jsonl",
+        "MXFP4_KERNEL_PACKAGE": null,
+        "MXFP4_KERNEL_PYTHON_PREFIX": null,
+        "PYTHONPATH": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/tools/jit_timing_hook:/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-flydsl-mxfp4-rdna4",
+        "FLYDSL_GPU_ARCH": "gfx1201",
+        "FLYDSL_AUTOTUNE": "0",
+        "FLYDSL_AUTOTUNE_CACHE_DIR": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/adaptive-calibration-20261101/serving-native-cache",
+        "VLLM_MXFP4_EMULATION_DEQUANT_AT_LOAD": "0"
+      },
+      "benchmark_environment": {
+        "GUIDELLM__MAX_WORKER_PROCESSES": "1",
+        "GUIDELLM__MP_MAX_PENDING_BUFFER_PERCENT": "2.0",
+        "ROCR_VISIBLE_DEVICES": "",
+        "TOKENIZERS_PARALLELISM": "false"
+      },
+      "source_head": "6973ab622cfd7a78e05101397692c33eae4ff0c8",
+      "source_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hook_sha256": "4787e93d9ec0ab3cfa580880c091062b64556ed7e505cb28f75c89113a3e4195",
+      "driver_sha256": "be8521122769fe71539762e910dc6bb5c621d0dddb7203cd710c2a93f8d50f36",
+      "rerun_rule": "Always retain passes 1 and 2; select pass 2 as predeclared, with a prefix reset before each."
+    },
+    {
+      "case": "flydsl",
+      "model": {
+        "phase": "complete",
+        "repo": "amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+        "revision": "5233554c5fa56afda40150556b95573c2d7d29c0",
+        "path": "/home/ellm/.cache/huggingface/hub/models--amd--Qwen3.8-27B-Quark-AWQ-MXFP4/snapshots/5233554c5fa56afda40150556b95573c2d7d29c0",
+        "completed": 1793468293.623125
+      },
+      "gpu": [
+        0,
+        1
+      ],
+      "port": 8000,
+      "tensor_parallel_size": 2,
+      "activation": "fp8",
+      "kernel_package": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4",
+      "kernel_source_sha256": {
+        "__init__.py": "34b8624aafa2e4596d394798a968a1ce4d2fb1980c2f418689ae12972242f123",
+        "common.py": "6fd836221e5a1c85a183e6b4232104df68fbc3fb65cacdc7b3133790ffe02d54",
+        "entrypoint.py": "f311aa876e12d93b632b3c5ed72164728ee8bf8a32ebcc7e032a3427c7c48a2d",
+        "heuristic.py": "5582d2b01042a1adc35cd19a013cac80b39cefc2307318217bae934bb71944b2",
+        "hybrid.py": "d7a9336b8969804d07f36be7da72d5c8f87adfcfa6f7693e04bc505dceb008a1",
+        "register.py": "4e7476c165dcc84a7047ed42618de2f19247e50acc06bf6d686b11601bf0b4cb"
+      },
+      "streams": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "requested_passes": 2,
+      "profile_ms": [],
+      "server_command": [
+        "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.cache/mxfp4-serving/.venv/bin/python",
+        "-m",
+        "vllm.entrypoints.cli.main",
+        "serve",
+        "/home/ellm/.cache/huggingface/hub/models--amd--Qwen3.8-27B-Quark-AWQ-MXFP4/snapshots/5233554c5fa56afda40150556b95573c2d7d29c0",
+        "--served-model-name",
+        "amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000",
+        "--tensor-parallel-size",
+        "2",
+        "--dtype",
+        "bfloat16",
+        "--language-model-only",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "16",
+        "--max-num-batched-tokens",
+        "2048",
+        "--gpu-memory-utilization",
+        "0.98",
+        "--enable-prefix-caching",
+        "--disable-custom-all-reduce",
+        "--quantization-config",
+        "{\"linear\": {\"activation\": \"fp8_per_token\"}}",
+        "--kernel-config",
+        "{\"linear_backend_per_quant\": {\"mxfp4\": \"flydsl\"}}",
+        "--compilation-config",
+        "{\"cudagraph_capture_sizes\": [1, 2, 4, 8, 16]}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\": false}",
+        "--generation-config",
+        "vllm",
+        "--override-generation-config",
+        "{\"temperature\": 0}",
+        "--seed",
+        "42",
+        "--disable-uvicorn-access-log",
+        "--jit-monitor-verbose"
+      ],
+      "server_environment": {
+        "ROCR_VISIBLE_DEVICES": "0,1",
+        "NCCL_PROTO": "Simple",
+        "NCCL_DEBUG": "INFO",
+        "VLLM_SERVER_DEV_MODE": "1",
+        "MXFP4_JIT_LOG": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-flydsl/native-jit.jsonl",
+        "MXFP4_KERNEL_PACKAGE": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/FlyDSL-mxfp4-rdna4/kernels/gemm/rdna4_mxfp4",
+        "MXFP4_KERNEL_PYTHON_PREFIX": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/.cache/mxfp4-serving/.venv",
+        "PYTHONPATH": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/tools/jit_timing_hook:/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-flydsl-mxfp4-rdna4",
+        "FLYDSL_GPU_ARCH": "gfx1201",
+        "FLYDSL_AUTOTUNE": "0",
+        "FLYDSL_AUTOTUNE_CACHE_DIR": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-flydsl/native-tuning-cache",
+        "VLLM_MXFP4_EMULATION_DEQUANT_AT_LOAD": "0"
+      },
+      "benchmark_environment": {
+        "GUIDELLM__MAX_WORKER_PROCESSES": "1",
+        "GUIDELLM__MP_MAX_PENDING_BUFFER_PERCENT": "2.0",
+        "ROCR_VISIBLE_DEVICES": "",
+        "TOKENIZERS_PARALLELISM": "false"
+      },
+      "source_head": "6973ab622cfd7a78e05101397692c33eae4ff0c8",
+      "source_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hook_sha256": "4787e93d9ec0ab3cfa580880c091062b64556ed7e505cb28f75c89113a3e4195",
+      "driver_sha256": "be8521122769fe71539762e910dc6bb5c621d0dddb7203cd710c2a93f8d50f36",
+      "rerun_rule": "Always retain passes 1 and 2; select pass 2 as predeclared, with a prefix reset before each."
+    }
+  ],
+  "hashes": {
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-default/pass2/agent-multiturn-benchmarks.json": "6e2b73bc7a75690a2d8fde1fa7e88e4b2c65b6715177e8832d7a8cfb61b634ef",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-flydsl/pass2/agent-multiturn-benchmarks.json": "d319a34730c5990a5abe172d0384928a115d649397194139504ecdadaad8d2d2",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/guidellm-benchmark-compare/scripts/summarize_guidellm.py": "ff94786b84ba5b59f328793422b96662c7935ea6b67e613a70e69924ab514117",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/guidellm-benchmark-compare/scripts/plot_compare_multiturn.py": "e3b5593068d9fcc95f28f8dafa0fd83cb3509fc63c90aeb7bdcfb086374cc91a"
+  }
+}

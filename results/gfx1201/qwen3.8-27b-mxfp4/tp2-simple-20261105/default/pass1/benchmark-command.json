@@ -1,0 +1,11 @@
+[
+  "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-bench-collection/.venv/bin/guidellm",
+  "run",
+  "--config",
+  "/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-default/pass1/config.json",
+  "--tokenizer",
+  "{\"kind\": \"huggingface_auto\", \"model\": \"/home/ellm/.cache/huggingface/hub/models--amd--Qwen3.8-27B-Quark-AWQ-MXFP4/snapshots/5233554c5fa56afda40150556b95573c2d7d29c0\"}",
+  "--output",
+  "kind=json,path=/home/ellm/jeff/rocm_workspaces/10/gfx1201/mxfp4-flydsl/artifacts/upstream-pr-serving-20261105/tp2-default/pass1/agent-multiturn-benchmarks.json",
+  "--disable-console-interactive"
+]
