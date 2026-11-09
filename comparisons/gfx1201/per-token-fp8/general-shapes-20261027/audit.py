@@ -22,36 +22,35 @@ assert json.loads((root / "full-correctness-status.json").read_text())["cases"] 
 )
 
 expected_shapes = set()
+timings = {}
 for suite in ("broad", "blind", "boundaries", "prospective2"):
     records = [
         json.loads(line)
         for line in (root / f"validation-{suite}.jsonl").read_text().splitlines()
     ]
     expected_shapes.update((r["M"], r["N"], r["K"]) for r in records)
+    for record in records:
+        timings.setdefault((record["M"], record["N"], record["K"]), record)
 assert shapes == expected_shapes
 
 controls = json.loads((root / "validation-controls.json").read_text())
 assert len(controls) == 186
 assert all(r["status"] == "pass" for r in controls)
 
-with (root / "shape-results.csv").open() as handle:
+with (root / "triton-vs-rowwise.csv").open() as handle:
     exported = list(csv.DictReader(handle))
 assert len(exported) == len(rows)
 assert {(int(r["M"]), int(r["N"]), int(r["K"])) for r in exported} == shapes
-assert all(r["status"] == "pass" for r in exported)
-for name, group_fields in (
-    ("coverage-by-pair.csv", ("N", "K")),
-    ("coverage-by-m.csv", ("M",)),
-):
-    with (root / name).open() as handle:
-        summary = list(csv.DictReader(handle))
-    for group in summary:
-        matching = [
-            r for r in rows if all(r[key] == int(group[key]) for key in group_fields)
-        ]
-        assert len(matching) == int(group["passed"])
-        assert int(group["failed"]) == 0
-    assert sum(int(group["passed"]) for group in summary) == len(rows)
+assert all(r["correctness"] == "pass" for r in exported)
+for row in exported:
+    record = timings[int(row["M"]), int(row["N"]), int(row["K"])]
+    assert row["timing_source"] == record["timing_source"]
+    for mode, metric in (("graph", "graph_gpu_us"), ("eager", "batch_wall_us")):
+        torch = record["median_us"]["torch"][metric]
+        triton = record["median_us"]["after"][metric]
+        assert float(row[f"torch_{mode}_us"]) == torch
+        assert float(row[f"triton_{mode}_us"]) == triton
+        assert float(row[f"{mode}_speedup"]) == torch / triton
 
 frozen = json.loads((root / "frozen-candidate.json").read_text())
 for name, expected in frozen["sha256"].items():

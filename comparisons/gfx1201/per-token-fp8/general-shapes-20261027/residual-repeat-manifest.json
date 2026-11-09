@@ -1,0 +1,42 @@
+{
+  "selected": [
+    {
+      "M": 257,
+      "N": 512,
+      "K": 512,
+      "suites": [
+        "broad"
+      ]
+    },
+    {
+      "M": 1,
+      "N": 128,
+      "K": 128,
+      "suites": [
+        "broad"
+      ]
+    },
+    {
+      "M": 65,
+      "N": 18944,
+      "K": 3584,
+      "suites": [
+        "broad"
+      ]
+    },
+    {
+      "M": 65,
+      "N": 19968,
+      "K": 5632,
+      "suites": [
+        "prospective2"
+      ]
+    }
+  ],
+  "started": 1793103475.2355456,
+  "sources": {
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/vllm/model_executor/kernels/linear/scaled_mm/triton.py": "07b0b7db9b5aadaa4f2cfc705abe80fd788323dfbd076227eef98b2f255570f3",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic.py": "2c4b42bf6815dcf81d66ea3fa94b28d8c1ea240291bd34a36b9f7177f42dff5f",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic_rules.py": "ee10edc200392d6c69e9c1d958107d4182e729142810d749f54ea2f73f7404a0"
+  }
+}
