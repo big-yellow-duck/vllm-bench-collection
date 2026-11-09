@@ -1,0 +1,73 @@
+{
+  "source": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine",
+  "sha256": {
+    "vllm/model_executor/kernels/linear/scaled_mm/triton.py": "07b0b7db9b5aadaa4f2cfc705abe80fd788323dfbd076227eef98b2f255570f3",
+    "vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic.py": "2c4b42bf6815dcf81d66ea3fa94b28d8c1ea240291bd34a36b9f7177f42dff5f",
+    "vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic_rules.py": "ee10edc200392d6c69e9c1d958107d4182e729142810d749f54ea2f73f7404a0",
+    "tests/kernels/quantization/test_triton_scaled_mm.py": "bc3f59f8659775135ac6b4d46428d06e8c05693101e0f5104238f030bc4bb64a"
+  },
+  "physical_gpu": 1,
+  "started": 1793103210.8187184,
+  "stages": [
+    {
+      "stage": "warmup",
+      "seconds": 11.608009099960327,
+      "returncode": 0
+    },
+    {
+      "stage": "delta",
+      "seconds": 29.907697677612305,
+      "returncode": 0
+    },
+    {
+      "stage": "full-correctness",
+      "seconds": 47.6773681640625,
+      "returncode": 0
+    },
+    {
+      "stage": "tuned",
+      "seconds": 104.08722066879272,
+      "returncode": 0
+    },
+    {
+      "stage": "controls",
+      "seconds": 20.32595658302307,
+      "returncode": 0
+    },
+    {
+      "stage": "rotating",
+      "seconds": 56.27903604507446,
+      "returncode": 0
+    },
+    {
+      "stage": "prepare-serving",
+      "seconds": 0.10759377479553223,
+      "returncode": 0
+    },
+    {
+      "stage": "graph-serving",
+      "seconds": 543.7497851848602,
+      "returncode": 1
+    },
+    {
+      "stage": "graph-serving-gpu0",
+      "seconds": 3002.017697572708,
+      "returncode": 0,
+      "physical_gpu": 0
+    },
+    {
+      "stage": "eager-serving-gpu0",
+      "seconds": 418.45213294029236,
+      "returncode": 1,
+      "physical_gpu": 0
+    },
+    {
+      "stage": "eager-serving-gpu0-retry1",
+      "seconds": 2230.8361423015594,
+      "returncode": 0,
+      "physical_gpu": 0
+    }
+  ],
+  "serving_physical_gpu": 0,
+  "gpu0_resumed_at": 1793105854.951491
+}

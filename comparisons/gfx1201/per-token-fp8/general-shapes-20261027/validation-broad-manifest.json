@@ -1,0 +1,26 @@
+{
+  "source_sha256": {
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/vllm/model_executor/kernels/linear/scaled_mm/triton.py": "07b0b7db9b5aadaa4f2cfc705abe80fd788323dfbd076227eef98b2f255570f3",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic.py": "2c4b42bf6815dcf81d66ea3fa94b28d8c1ea240291bd34a36b9f7177f42dff5f",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic_rules.py": "ee10edc200392d6c69e9c1d958107d4182e729142810d749f54ea2f73f7404a0",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/tests/kernels/quantization/test_triton_scaled_mm.py": "bc3f59f8659775135ac6b4d46428d06e8c05693101e0f5104238f030bc4bb64a",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/logs/fp8-heuristic-refine-20261027/delta.py": "dd30930b2c34a8045e6412e1bbc8c5819af7243f83c54ffaa3741843784259e9",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/logs/fp8-heuristic-refine-20261027/validate.py": "18a129708387b0575c611147705f97d9d85392a892b2756d366546b73e1cce06",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/logs/fp8-heuristic-refine-20261027/experiment.py": "0e0aaabfe0c2e36d069fd4299c47d0c92e4f1a813db6a55b5991db9dd45cce91",
+    "/home/ellm/jeff/rocm_workspaces/10/gfx1201/vllm-fp8-heuristic-refine/vllm/model_executor/layers/quantization/compressed_tensors/triton_scaled_mm.py": "ef7395248da2767c54302189df99540f9caa06d3b05d529c50c4620a0fd14b15"
+  },
+  "reused_source_sha256": {
+    "vllm/model_executor/kernels/linear/scaled_mm/triton.py": "07b0b7db9b5aadaa4f2cfc705abe80fd788323dfbd076227eef98b2f255570f3",
+    "vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic.py": "2c4b42bf6815dcf81d66ea3fa94b28d8c1ea240291bd34a36b9f7177f42dff5f",
+    "vllm/model_executor/layers/quantization/utils/fp8_per_token_heuristic_rules.py": "70654ef173f94138f7c6de0e46d66b211550a6143547e78e87369668b2b10b42",
+    "tests/kernels/quantization/test_triton_scaled_mm.py": "bc3f59f8659775135ac6b4d46428d06e8c05693101e0f5104238f030bc4bb64a"
+  },
+  "reused_from": "/home/ellm/jeff/rocm_workspaces/10/gfx1201/logs/fp8-heuristic-refine-20261027/screen-v3/validation-broad.jsonl",
+  "reused_records": 2152,
+  "retimed_records": 18,
+  "policy": "Only exact launch-choice matches reuse paired measurements; full final-source correctness runs separately",
+  "torch": "2.13.0+rocm10.0.0",
+  "hip": "7.15.26333",
+  "triton": "3.8.0",
+  "physical_gpu": 1
+}
