@@ -1,5 +1,6 @@
 """Audit the archived evidence without importing Torch or running a GPU."""
 
+import csv
 import hashlib
 import json
 from pathlib import Path
@@ -32,6 +33,25 @@ assert shapes == expected_shapes
 controls = json.loads((root / "validation-controls.json").read_text())
 assert len(controls) == 186
 assert all(r["status"] == "pass" for r in controls)
+
+with (root / "shape-results.csv").open() as handle:
+    exported = list(csv.DictReader(handle))
+assert len(exported) == len(rows)
+assert {(int(r["M"]), int(r["N"]), int(r["K"])) for r in exported} == shapes
+assert all(r["status"] == "pass" for r in exported)
+for name, group_fields in (
+    ("coverage-by-pair.csv", ("N", "K")),
+    ("coverage-by-m.csv", ("M",)),
+):
+    with (root / name).open() as handle:
+        summary = list(csv.DictReader(handle))
+    for group in summary:
+        matching = [
+            r for r in rows if all(r[key] == int(group[key]) for key in group_fields)
+        ]
+        assert len(matching) == int(group["passed"])
+        assert int(group["failed"]) == 0
+    assert sum(int(group["passed"]) for group in summary) == len(rows)
 
 frozen = json.loads((root / "frozen-candidate.json").read_text())
 for name, expected in frozen["sha256"].items():
