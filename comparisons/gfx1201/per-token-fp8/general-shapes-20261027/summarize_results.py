@@ -58,17 +58,22 @@ with (ROOT / "triton-vs-rowwise.csv").open("w", newline="") as handle:
     writer.writerows(rows)
 
 summary = []
-for mode, label in (("graph", "Graph GPU time"), ("eager", "Batched eager completion")):
-    ratios = [row[f"{mode}_speedup"] for row in rows]
+for backend, label in (("torch", "Torch RowWise (baseline)"), ("triton", "Triton")):
+    graph_speedup = (
+        geomean(row["graph_speedup"] for row in rows) if backend == "triton" else 1.0
+    )
+    eager_speedup = (
+        geomean(row["eager_speedup"] for row in rows) if backend == "triton" else 1.0
+    )
     summary.append(
-        f"| {label} | {geomean(row[f'torch_{mode}_us'] for row in rows):.2f} "
-        f"| {geomean(row[f'triton_{mode}_us'] for row in rows):.2f} "
-        f"| {geomean(ratios):.3f}× | {sum(ratio > 1 for ratio in ratios):,} "
-        f"| {sum(ratio < 1 for ratio in ratios):,} |"
+        f"| {label} | {geomean(row[f'{backend}_graph_us'] for row in rows):.2f} "
+        f"| {graph_speedup:.3f}× "
+        f"| {geomean(row[f'{backend}_eager_us'] for row in rows):.2f} "
+        f"| {eager_speedup:.3f}× |"
     )
 
 table = [
-    "| M | N | K | Torch graph µs | Triton graph µs | Graph speedup | Torch eager µs | Triton eager µs | Eager speedup |",
+    "| M | N | K | Torch RowWise graph µs | Triton graph µs | Triton vs Torch speedup (graph) | Torch RowWise eager µs | Triton eager µs | Triton vs Torch speedup (eager) |",
     "| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
 ]
 for row in rows:
@@ -93,8 +98,9 @@ assert sources == {
 readme = (
     """# Triton vs Torch RowWise: full per-token FP8 comparison
 
-On the archived R9700/gfx1201 workload, native Triton achieved **1.874× graph**
-and **1.744× batched eager** geometric-mean speedup over Torch RowWise across
+On the archived R9700/gfx1201 workload, native Triton achieved **1.874× speedup
+over Torch RowWise with both backends using graph replay**, and **1.744× with
+both backends using batched eager execution**, by geometric mean across
 **2,513 distinct M/N/K shapes**. Triton was slower on **3 graph cases** and
 **2 eager cases**; every distinct shape is retained below. All 2,513 shapes
 passed the separate full-output correctness sweep; 186 additional controls passed.
@@ -105,15 +111,16 @@ not a new run of the current [vLLM PR #61091](https://github.com/vllm-project/vl
 tip or a model-throughput result. Both backends used the same prequantized FP8
 operands, BF16 output, per-token/per-channel FP32 scales, and no bias.
 
-| Measurement | Torch geomean µs | Triton geomean µs | Geomean speedup | Triton faster | Triton slower |
-| --- | ---: | ---: | ---: | ---: | ---: |
+| Backend | Graph geomean µs | Speedup vs Torch RowWise (graph) | Eager geomean µs | Speedup vs Torch RowWise (eager) |
+| --- | ---: | ---: | ---: | ---: |
 """
     + "\n".join(summary)
     + """
 
 The summary gives every distinct shape equal weight. It is not weighted by a
-model's layer frequency or token distribution. Speedup is **Torch time / Triton
-time**: above 1× favors Triton, below 1× favors Torch. Latency columns are
+model's layer frequency or token distribution. Every speedup is **Torch RowWise
+time / Triton time in the same execution mode**: above 1× favors Triton,
+below 1× favors Torch. Latency columns are
 geometric means of per-case medians; speedups and faster/slower counts use
 unrounded data. The 2,450 reused cases have three paired rounds each; the
 63 newly measured cases have five paired rounds each.
@@ -122,8 +129,9 @@ unrounded data. The 2,450 reused cases have three paired rounds each; the
 
 Sorted by N, K, then M. **Bold speedups mark cases where Triton was slower**;
 there are no exact ties in the unrounded records. Times are in microseconds.
-Graph columns measure GPU graph replay; eager columns include CPU submission
-and synchronized completion and must be compared separately.
+Graph speedup divides Torch RowWise graph time by Triton graph time. Eager
+speedup divides Torch RowWise eager time by Triton eager time. No speedup
+compares graph execution with eager execution.
 
 [Download the complete CSV with full-precision timings, corpus, and timing provenance](triton-vs-rowwise.csv).
 
